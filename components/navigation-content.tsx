@@ -158,21 +158,20 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                   <Github className="h-5 w-5" />
                 </Button>
               </Link>
-              // 注释掉下载浏览器插件
-             //  <Link
-              //   href="https://github.com"
-              //   target="_blank"
-              //   rel="noopener noreferrer"
-              //   aria-label="下载浏览器插件"
-          //     >
-            //     <Button
-              //     variant="ghost"
-              //     size="icon"
-             //      className="hover:bg-accent hover:text-accent-foreground"
-          //       >
-            //       <Puzzle className="h-5 w-5" />
-           //      </Button>
-           //    </Link>
+             /* <Link
+                 href="https://github.com"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="下载浏览器插件"
+               >
+                 <Button
+                   variant="ghost"
+                   size="icon"
+                   className="hover:bg-accent hover:text-accent-foreground"
+                 >
+                   <Puzzle className="h-5 w-5" />
+                 </Button>
+               </Link>*/
               <Link
                 href="https://mp.weixin.qq.com/s/LnuWxUC7ZXf0q35QnPF6Aw"
                 target="_blank"
