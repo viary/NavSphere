@@ -158,7 +158,8 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                   <Github className="h-5 w-5" />
                 </Button>
               </Link>
-             /* <Link
+               {/* 注释掉下载浏览器插件的按钮：
+              <Link
                  href="https://github.com"
                  target="_blank"
                  rel="noopener noreferrer"
@@ -171,7 +172,7 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                  >
                    <Puzzle className="h-5 w-5" />
                  </Button>
-               </Link>*/
+               </Link>*/}
               <Link
                 href="https://mp.weixin.qq.com/s/LnuWxUC7ZXf0q35QnPF6Aw"
                 target="_blank"
