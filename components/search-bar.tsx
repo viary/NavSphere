@@ -2,47 +2,69 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Input } from '@/registry/new-york/ui/input'
-import { Command, CommandList, CommandGroup, CommandItem } from '@/registry/new-york/ui/command'
-import { Search, X } from 'lucide-react'
 import { Button } from '@/registry/new-york/ui/button'
-import type { NavigationData, NavigationItem, NavigationSubItem } from '@/types/navigation'
+import { Search, X, ChevronDown } from 'lucide-react'
+import type { NavigationData } from '@/types/navigation'
 import type { SiteConfig } from '@/types/site'
 
+// 新增 Yandex 搜索引擎配置
+const SEARCH_ENGINES = [
+  {
+    id: 'baidu',
+    name: '百度',
+    url: 'https://www.baidu.com/s?wd='
+  },
+  {
+    id: 'google',
+    name: '谷歌',
+    url: 'https://www.google.com/search?q='
+  },
+  {
+    id: 'bing',
+    name: '必应',
+    url: 'https://cn.bing.com/search?q='
+  },
+  {
+    id: 'yandex', // 新增 Yandex 标识
+    name: 'Yandex', // 显示名称
+    url: 'https://yandex.com/search/?text=' // Yandex 搜索地址
+  }
+]
+
 interface SearchBarProps {
-  navigationData: NavigationData
-  onSearch: (query: string) => void
-  searchResults: Array<{
-    category: NavigationItem
-    items: (NavigationItem | NavigationSubItem)[]
-    subCategories: Array<{
-      title: string
-      items: (NavigationItem | NavigationSubItem)[]
-    }>
-  }>
-  searchQuery: string
+  navigationData?: NavigationData // 保留原属性避免报错，不再使用
+  onSearch?: (query: string) => void // 保留原属性避免报错，不再使用
+  searchResults?: any[] // 保留原属性避免报错，不再使用
+  searchQuery?: string // 保留原属性避免报错，不再使用
   siteConfig?: SiteConfig
 }
 
-export function SearchBar({ onSearch, searchResults, searchQuery, siteConfig }: SearchBarProps) {
+export function SearchBar({ siteConfig }: SearchBarProps) {
   const [isFocused, setIsFocused] = useState(false)
+  const [searchText, setSearchText] = useState('') // 独立管理搜索框内容
+  const [selectedEngine, setSelectedEngine] = useState(SEARCH_ENGINES[0]) // 默认选中百度
+  const [showEngineList, setShowEngineList] = useState(false) // 控制搜索引擎下拉显示
   const searchRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  // 点击外部关闭弹窗/下拉
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
         setIsFocused(false)
+        setShowEngineList(false)
       }
     }
-
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  // 快捷键逻辑（保留原有的esc/ctrl+k，仅修改搜索行为）
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setIsFocused(false)
+        setShowEngineList(false)
         inputRef.current?.blur()
       }
       
@@ -51,171 +73,90 @@ export function SearchBar({ onSearch, searchResults, searchQuery, siteConfig }: 
         inputRef.current?.focus()
         setIsFocused(true)
       }
-    }
 
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [])
-
-  const highlightText = (text: string) => {
-    if (!searchQuery) return text
-    const parts = text.split(new RegExp(`(${searchQuery})`, 'gi'))
-    return parts.map((part, i) => 
-      part.toLowerCase() === searchQuery.toLowerCase() ? 
-        <span key={i} className="bg-yellow-200 dark:bg-yellow-800">{part}</span> : part
-    )
-  }
-
-  const handleInputChange = (value: string) => {
-    onSearch(value)
-    setIsFocused(true)
-  }
-
-  const handleItemSelect = (item: NavigationItem | NavigationSubItem) => {
-    const itemWithHref = item as NavigationSubItem
-    if (itemWithHref.href) {
-      const linkTarget = siteConfig?.navigation?.linkTarget || '_blank'
-      if (linkTarget === '_self') {
-        window.location.href = itemWithHref.href
-      } else {
-        window.open(itemWithHref.href, linkTarget)
+      // 回车触发搜索
+      if (event.key === 'Enter' && searchText.trim()) {
+        handleSearch()
       }
     }
-    onSearch('')
-    setIsFocused(false)
-  }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [searchText, selectedEngine])
 
+  // 清空搜索框
   const clearSearch = () => {
-    onSearch('')
+    setSearchText('')
     setIsFocused(false)
     inputRef.current?.focus()
   }
 
-  const showResults = isFocused && searchQuery.trim().length > 0
+  // 执行互联网搜索
+  const handleSearch = () => {
+    if (!searchText.trim()) return
+    // 拼接搜索引擎URL并打开
+    const searchUrl = selectedEngine.url + encodeURIComponent(searchText)
+    const linkTarget = siteConfig?.navigation?.linkTarget || '_blank'
+    window.open(searchUrl, linkTarget)
+  }
 
   return (
     <div ref={searchRef} className="relative w-full max-w-lg mx-auto">
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+      <div className="relative flex items-center">
+        {/* 搜索引擎切换按钮 */}
+        <button
+          onClick={() => setShowEngineList(!showEngineList)}
+          className="absolute left-3 top-1/2 transform -translate-y-1/2 h-6 w-20 flex items-center justify-between text-sm text-muted-foreground bg-transparent border-0 cursor-pointer"
+        >
+          {selectedEngine.name}
+          <ChevronDown className="h-3 w-3" />
+        </button>
+        {/* 搜索引擎下拉列表 */}
+        {showEngineList && (
+          <div className="absolute left-3 top-full mt-1 bg-background border rounded-lg shadow-xl z-50 w-28 py-1">
+            {SEARCH_ENGINES.map(engine => (
+              <div
+                key={engine.id}
+                onClick={() => {
+                  setSelectedEngine(engine)
+                  setShowEngineList(false)
+                }}
+                className="px-3 py-1 text-sm hover:bg-accent cursor-pointer"
+              >
+                {engine.name}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* 搜索输入框（调整内边距，避开左侧切换按钮） */}
         <Input
           ref={inputRef}
-          placeholder="搜索导航..."
-          value={searchQuery}
-          onChange={(e) => handleInputChange(e.target.value)}
+          placeholder="搜索互联网内容..."
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
           onFocus={() => setIsFocused(true)}
-          className="pl-10 pr-20 h-10 rounded-lg border shadow-sm"
+          className="pl-24 pr-20 h-10 rounded-lg border shadow-sm" // 左侧内边距加大，避开切换按钮
         />
-        <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-1">
-          {searchQuery && (
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={clearSearch}
-              className="h-6 w-6 p-0 hover:bg-muted"
-            >
-              <X className="h-3 w-3" />
-            </Button>
-          )}
-          <kbd className="hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-xs text-muted-foreground opacity-100 sm:flex">
-            <span className="text-xs">⌘</span>K
-          </kbd>
-        </div>
-      </div>
 
-      {showResults && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-background border rounded-lg shadow-xl z-50 max-h-[70vh] overflow-hidden">
-          <Command className="border-0 shadow-none">
-            <CommandList className="max-h-[70vh] overflow-y-auto">
-              {searchResults.length === 0 ? (
-                <div className="py-8 text-center">
-                  <div className="text-muted-foreground text-sm">
-                    未找到与 &ldquo;<span className="font-medium">{searchQuery}</span>&rdquo; 相关的导航
-                  </div>
-                  <div className="text-xs text-muted-foreground/70 mt-1">
-                    尝试使用不同的关键词搜索
-                  </div>
-                </div>
-              ) : (
-                searchResults.map((result) => (
-                  <CommandGroup key={result.category.id} heading={result.category.title}>
-                    {result.items.map((item) => (
-                      <CommandItem
-                        key={item.id}
-                        value={item.title}
-                        onSelect={() => handleItemSelect(item)}
-                        className="flex items-center gap-3 py-3 px-3 cursor-pointer hover:bg-accent/50"
-                      >
-                        <div className="flex-shrink-0 w-8 h-8">
-                          {item.icon && (
-                            <img
-                              src={item.icon}
-                              alt={`${item.title} icon`}
-                              className="w-full h-full object-contain rounded"
-                              onError={(e) => {
-                                const target = e.target as HTMLImageElement
-                                target.style.display = 'none'
-                              }}
-                            />
-                          )}
-                        </div>
-                        <div className="flex flex-col flex-1 gap-1">
-                          <span className="text-sm font-medium">
-                            {highlightText(item.title)}
-                          </span>
-                          {item.description && (
-                            <span className="text-xs text-muted-foreground line-clamp-1">
-                              {highlightText(item.description)}
-                            </span>
-                          )}
-                        </div>
-                      </CommandItem>
-                    ))}
-                    {result.subCategories.map((sub) => (
-                      <div key={sub.title}>
-                        <div className="px-3 py-2 text-xs font-medium text-muted-foreground bg-muted/30 border-b">
-                          {result.category.title} / {sub.title}
-                        </div>
-                        {sub.items.map((item) => (
-                          <CommandItem
-                            key={item.id}
-                            value={item.title}
-                            onSelect={() => handleItemSelect(item)}
-                            className="flex items-center gap-3 py-3 px-3 cursor-pointer hover:bg-accent/50"
-                          >
-                            <div className="flex-shrink-0 w-8 h-8">
-                              {item.icon && (
-                                <img
-                                  src={item.icon}
-                                  alt={`${item.title} icon`}
-                                  className="w-full h-full object-contain rounded"
-                                  onError={(e) => {
-                                    const target = e.target as HTMLImageElement
-                                    target.style.display = 'none'
-                                  }}
-                                />
-                              )}
-                            </div>
-                            <div className="flex flex-col flex-1 gap-1">
-                              <span className="text-sm font-medium">
-                                {highlightText(item.title)}
-                              </span>
-                              {item.description && (
-                                <span className="text-xs text-muted-foreground line-clamp-1">
-                                  {highlightText(item.description)}
-                                </span>
-                              )}
-                            </div>
-                          </CommandItem>
-                        ))}
-                      </div>
-                    ))}
-                  </CommandGroup>
-                ))
-              )}
-            </CommandList>
-          </Command>
-        </div>
-      )}
+        {/* 清空按钮 */}
+        {searchText && (
+          <button
+            onClick={clearSearch}
+            className="absolute right-10 top-1/2 transform -translate-y-1/2 h-6 w-6 p-0 hover:bg-muted rounded-full flex items-center justify-center"
+          >
+            <X className="h-3 w-3" />
+          </button>
+        )}
+
+        {/* 搜索按钮 */}
+        <Button
+          onClick={handleSearch}
+          disabled={!searchText.trim()}
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 h-6 w-6 p-0 hover:bg-accent rounded-full flex items-center justify-center"
+        >
+          <Search className="h-3 w-3" />
+        </Button>
+      </div>
     </div>
   )
 }
