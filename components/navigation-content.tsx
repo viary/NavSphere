@@ -145,10 +145,10 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
             <div className="flex items-center gap-1">
               <ModeToggle />
               <Link
-                href="https://github.com/"
+                href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="访问 GitHub 仓库"
+                aria-label="访问 GitHub"
               >
                 <Button
                   variant="ghost"
@@ -159,18 +159,18 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                 </Button>
               </Link>
               <Link
-                 href="https://github.com"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="下载浏览器插件"
-               >
-                 <Button
-                   variant="ghost"
-                   size="icon"
-                   className="hover:bg-accent hover:text-accent-foreground"
-                 >
-                   <Puzzle className="h-5 w-5" />
-                 </Button>
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="下载插件"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:bg-accent hover:text-accent-foreground"
+                >
+                  <Puzzle className="h-5 w-5" />
+                </Button>
               </Link>
               <Link
                 href="https://mp.weixin.qq.com/s/LnuWxUC7ZXf0q35QnPF6Aw"
