@@ -6,19 +6,19 @@
       "icon": "Star",
       "items": [
         {
-          "id": "1_1",
-          "title": "Google Analytics",
-          "href": "https://analytics.google.com/",
-          "description": "Google分析（Google Analytics）是一个由Google所提供的网站流量统计服务。",
-          "icon": "/assets/images/logos/analytics.webp",
-          "enabled": true
-        },
-        {
           "id": "1_2",
           "title": "好好看影视",
           "href": "https://share.feijipan.com/s/qDD9qu5x",
           "description": "高清无广追剧",
           "icon": "https://s41.ax1x.com/2026/01/25/pZ2rsjU.png",
+          "enabled": true
+        },
+        {
+          "id": "1_1",
+          "title": "Google Analytics",
+          "href": "https://analytics.google.com/",
+          "description": "Google分析（Google Analytics）是一个由Google所提供的网站流量统计服务。",
+          "icon": "/assets/images/logos/analytics.webp",
           "enabled": true
         },
         {
