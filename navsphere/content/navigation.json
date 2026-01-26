@@ -6,6 +6,14 @@
       "icon": "Star",
       "items": [
         {
+          "id": "1754229699374",
+          "title": "60秒早报",
+          "href": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3MDA2Mjc5NA==&action=getalbum&album_id=3253104306380161026#wechat_redirect",
+          "description": "每天60秒早报",
+          "icon": "https://s41.ax1x.com/2026/01/26/pZR9TbV.jpg",
+          "enabled": true
+        },
+        {
           "id": "1_2",
           "title": "好好看影视",
           "href": "https://share.feijipan.com/s/qDD9qu5x",
@@ -75,14 +83,6 @@
           "href": "https://postspark.app/",
           "description": "Beautiful Screenshots and Mockups\nCusomizable, eye-catching presentation for any content",
           "icon": "/assets/img_1741747241014.webp",
-          "enabled": true
-        },
-        {
-          "id": "1754229699374",
-          "title": "60秒早报",
-          "href": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3MDA2Mjc5NA==&action=getalbum&album_id=3253104306380161026#wechat_redirect",
-          "description": "每天60秒早报",
-          "icon": "https://s41.ax1x.com/2026/01/26/pZR9TbV.jpg",
           "enabled": true
         },
         {
