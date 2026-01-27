@@ -207,42 +207,37 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
           </div>
           
         
-          {/* ========== 核心：跑马灯通知栏（独立、双端适配） ========== */}
-          <div className="w-full max-w-lg mx-auto mt-2 px-3 sm:px-6">
-            {/* 跑马灯容器：保证PC端和搜索框同宽，移动端占满屏 */}
+                {/* ========== 修复PC端偏移：跑马灯通知栏 ========== */}
+          <div className="w-full max-w-lg mx-auto mt-2"> {/* 删掉 px-3 sm:px-6，关键！ */}
+            {/* 内层容器继承sticky栏的内边距，和搜索框完全对齐 */}
             <div className="px-2 py-1 text-sm text-center text-gray-700 dark:text-gray-300 bg-gray-100/80 dark:bg-gray-800/80 rounded-lg overflow-hidden">
-              {/* 滚动文字：超出自动滚动，无需长按 */}
               <span className="whitespace-nowrap inline-block animate-marquee" style={{ animationDuration: '15s' }}>
-                【navsphere通知】新增本地搜索功能，支持Ctrl+K聚焦搜索框，更多功能可查看帮助文档
+                【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
               </span>
             </div>
-            {/* 全局跑马灯动画样式（仅作用于通知栏，无其他影响） */}
+            {/* 动画样式不变，仅保证PC端对齐 */}
             <style jsx global>{`
               @keyframes marquee {
-                0% { transform: translateX(100%); }   /* 从右侧进入 */
-                100% { transform: translateX(-100%); } /* 从左侧离开 */
+                0% { transform: translateX(100%); }
+                100% { transform: translateX(-100%); }
               }
               .animate-marquee {
                 animation: marquee linear infinite;
-                animation-delay: 1s; /* 延迟1秒开始，更友好 */
+                animation-delay: 1s;
               }
-              /* PC端（768px以上）：文字不超宽则停止滚动，超宽仍滚动 */
               @media (min-width: 768px) {
                 .animate-marquee {
-                  animation-play-state: ${
-                    // 可选：手动控制PC端是否滚动，若想PC端始终滚动则删掉这段
-                    'paused' // 暂停动画，文字居中显示；改成 'running' 则PC端也滚动
-                  };
+                  animation-play-state: paused; /* PC端静止，居中显示 */
                   transform: translateX(0);
                 }
-                /* PC端文字超宽时，恢复滚动（可选，删掉则PC端始终静止） */
+                /* PC端文字超宽时自动滚动 */
                 .animate-marquee:where(:not([style*="width"])) {
                   animation-play-state: running;
                 }
               }
             `}</style>
           </div>
-          {/* ========== 跑马灯通知栏结束 ========== */}
+          {/* ========== 修复结束 ========== */}
      
           
         </div>
