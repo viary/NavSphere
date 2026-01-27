@@ -207,15 +207,15 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
           </div>
           
         
-                {/* ========== 修复PC端偏移：跑马灯通知栏 ========== */}
-          <div className="w-full max-w-lg mx-auto mt-2"> {/* 删掉 px-3 sm:px-6，关键！ */}
-            {/* 内层容器继承sticky栏的内边距，和搜索框完全对齐 */}
-            <div className="px-2 py-1 text-sm text-center text-gray-700 dark:text-gray-300 bg-gray-100/80 dark:bg-gray-800/80 rounded-lg overflow-hidden">
+                 {/* ========== 绝对对齐：跑马灯通知栏（PC端和搜索框完全重合） ========== */}
+          <div className="mt-2"> {/* 只保留上下间距，删掉所有可能偏移的宽度/内边距样式 */}
+            {/* 内层直接和SearchBar内部容器对齐：max-w-lg mx-auto 完全和SearchBar一致 */}
+            <div className="max-w-lg mx-auto px-2 py-1 text-sm text-center text-gray-700 dark:text-gray-300 bg-gray-100/80 dark:bg-gray-800/80 rounded-lg overflow-hidden">
               <span className="whitespace-nowrap inline-block animate-marquee" style={{ animationDuration: '15s' }}>
                 【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
               </span>
             </div>
-            {/* 动画样式不变，仅保证PC端对齐 */}
+            {/* 动画样式不变，仅保证无偏移 */}
             <style jsx global>{`
               @keyframes marquee {
                 0% { transform: translateX(100%); }
@@ -227,10 +227,9 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
               }
               @media (min-width: 768px) {
                 .animate-marquee {
-                  animation-play-state: paused; /* PC端静止，居中显示 */
+                  animation-play-state: paused;
                   transform: translateX(0);
                 }
-                /* PC端文字超宽时自动滚动 */
                 .animate-marquee:where(:not([style*="width"])) {
                   animation-play-state: running;
                 }
