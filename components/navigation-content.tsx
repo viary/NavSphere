@@ -205,6 +205,16 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
               </Button>
             </div>
           </div>
+          
+          // 新增通知栏开始（仅这5行是新增的）
+          <div className="w-full max-w-lg mx-auto mt-2">
+            <p className="px-2 py-1 text-sm text-center text-gray-700 dark:text-gray-300 bg-gray-100/80 dark:bg-gray-800/80 rounded-lg truncate"
+               title="【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！">
+              【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
+            </p>
+          </div>
+          // 新增通知栏结束
+          
         </div>
 
         <div className="px-3 sm:px-6 py-3 sm:py-6">
