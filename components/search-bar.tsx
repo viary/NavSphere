@@ -182,11 +182,11 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
         </Button>
       </div>
 
-      {/* 响应式通知栏：PC端和搜索框同宽，移动端占满屏幕 */}
-      <p className="mt-2 w-full md:max-w-lg md:mx-auto py-1 px-2 text-sm text-center bg-gray-100/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 rounded-lg truncate"
-         title="【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！">
-        【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
-      </p>
+        {/* 通知栏：宽度和搜索框一致，不影响同行的模式/菜单 */}
+     <p className="mt-2 w-full text-sm text-center py-1 px-2 bg-gray-100/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 rounded-lg truncate"
+        title="【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待">
+       【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待
+     </p>
       
       {/* 3. 核心改动：恢复站内搜索结果渲染 */}
       {showResults && (
