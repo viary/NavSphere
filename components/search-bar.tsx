@@ -182,18 +182,20 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
         </Button>
       </div>
 
-     {/* ========== 通知栏（仅这部分代码，原有代码全不动，后期注释这几行即可） ========== */}
-     <div className="w-full box-border overflow-hidden"> {/* 仅加这层容器，解决移动端横向滚动 */}
-       <div className="mt-2 px-2 py-1 rounded-lg bg-gray-100/80 dark:bg-gray-800/80">
-         <p 
-           className="text-sm text-gray-700 dark:text-gray-300 truncate text-center"
-           title="【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！"
-         >
-           【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
-         </p>
-       </div>
-     </div>
-     {/* ========== 通知栏结束 ========== */}
+       {/* ========== 通知栏：后期仅注释/删除这6行 ========== */}
+      {/* ============================================== */}
+      <div className="w-full max-w-full box-border overflow-hidden">
+        <div className="mt-2 px-2 py-1 rounded-lg bg-gray-100/80 dark:bg-gray-800/80">
+          <p 
+            className="text-sm text-gray-700 dark:text-gray-300 truncate text-center"
+            title="【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！"
+          >
+            【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
+          </p>
+        </div>
+      </div>
+      {/* ============================================== */}
+      {/* ========== 通知栏结束 ========== */}
       
       {/* 3. 核心改动：恢复站内搜索结果渲染 */}
       {showResults && (
