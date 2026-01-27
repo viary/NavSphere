@@ -144,6 +144,9 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
             </div>
             <div className="flex items-center gap-1">
               <ModeToggle />
+
+              {/* 注释掉访问github的按钮（完整包裹，不破坏JSX结构） */}
+              {/*  
               <Link
                 href="https://github.com"
                 target="_blank"
@@ -158,6 +161,7 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                   <Github className="h-5 w-5" />
                 </Button>
               </Link>
+              */}  
 
               {/* 注释掉下载浏览器插件的按钮（完整包裹，不破坏JSX结构） */}
               {/* 
