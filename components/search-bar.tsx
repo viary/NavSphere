@@ -123,7 +123,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
   const showResults = isFocused && searchQuery.trim().length > 0
 
   return (
-    <div ref={searchRef} className="relative max-w-lg mx-auto box-border overflow-hidden min-w-0">
+    <div ref={searchRef} className="relative w-full max-w-lg mx-auto">
       <div className="relative flex items-center">
         {/* 搜索引擎下拉按钮 */}
         <button
@@ -182,11 +182,6 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
         </Button>
       </div>
 
-      <p className="mt-2 w-full md:max-w-lg md:mx-auto py-1 px-2 text-sm text-center bg-gray-100/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 rounded-lg truncate"
-         title="【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！">
-        【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
-      </p>
-      
       {/* 3. 核心改动：恢复站内搜索结果渲染 */}
       {showResults && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-background border rounded-lg shadow-xl z-50 max-h-[70vh] overflow-hidden">
