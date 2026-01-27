@@ -207,15 +207,16 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
           </div>
           
         
-                 {/* ========== 绝对对齐：跑马灯通知栏（PC端和搜索框完全重合） ========== */}
-          <div className="mt-2"> {/* 只保留上下间距，删掉所有可能偏移的宽度/内边距样式 */}
-            {/* 内层直接和SearchBar内部容器对齐：max-w-lg mx-auto 完全和SearchBar一致 */}
-            <div className="max-w-lg mx-auto px-2 py-1 text-sm text-center text-gray-700 dark:text-gray-300 bg-gray-100/80 dark:bg-gray-800/80 rounded-lg overflow-hidden">
+                 {/* ========== 不嵌套SearchBar + PC端100%对齐 + 手机端不溢出 ========== */}
+          <div className="mt-2">
+            {/* 核心：精准匹配SearchBar内部的pl-24 pr-20（搜索框的内边距），反向校准居中 */}
+            <div className="max-w-lg mx-auto px-2 py-1 text-sm text-center text-gray-700 dark:text-gray-300 bg-gray-100/80 dark:bg-gray-800/80 rounded-lg overflow-hidden"
+                 style={{ marginLeft: 'calc(-24px + 20px)/2', marginRight: 'calc(-20px + 24px)/2' }}>
               <span className="whitespace-nowrap inline-block animate-marquee" style={{ animationDuration: '15s' }}>
                 【通知】网站目前还在更新完善中，更多资源将陆续上架，敬请期待！
               </span>
             </div>
-            {/* 动画样式不变，仅保证无偏移 */}
+            {/* 动画样式不变，保证双端效果 */}
             <style jsx global>{`
               @keyframes marquee {
                 0% { transform: translateX(100%); }
@@ -234,9 +235,16 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                   animation-play-state: running;
                 }
               }
+              @media (max-width: 767px) {
+                .max-w-lg {
+                  margin-left: 0 !important;
+                  margin-right: 0 !important;
+                  max-width: 100% !important;
+                }
+              }
             `}</style>
           </div>
-          {/* ========== 修复结束 ========== */}
+          {/* ========== 解决方案结束 ========== */}
      
           
         </div>
