@@ -2,7 +2,7 @@
   "navigationItems": [
     {
       "id": "1",
-      "title": "常用推荐",
+      "title": "热门推荐",
       "icon": "Star",
       "items": [
         {
@@ -151,7 +151,7 @@
         }
       ],
       "subCategories": [],
-      "description": "",
+      "description": "推荐热门资源",
       "enabled": true
     },
     {
