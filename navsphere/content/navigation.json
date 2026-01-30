@@ -30,19 +30,19 @@
           "enabled": true
         },
         {
-          "id": "1741747111596",
-          "title": "乌云影视",
-          "href": "https://share.feijipan.com/s/3lZZPamE",
-          "description": "高清追剧影视软件",
-          "icon": "https://s41.ax1x.com/2026/01/26/pZREOwn.jpg",
-          "enabled": true
-        },
-        {
           "id": "item-1765687115114",
           "title": "IOS追剧",
           "href": "https://www.kdocs.cn/l/cvaj3UAyWRog",
           "description": "苹果ios追剧软件，按文档操作",
           "icon": "https://s41.ax1x.com/2026/01/26/pZRQnL8.png",
+          "enabled": true
+        },
+        {
+          "id": "1741747111596",
+          "title": "乌云影视",
+          "href": "https://share.feijipan.com/s/3lZZPamE",
+          "description": "高清追剧影视软件",
+          "icon": "https://s41.ax1x.com/2026/01/26/pZREOwn.jpg",
           "enabled": true
         },
         {
