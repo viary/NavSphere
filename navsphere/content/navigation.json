@@ -170,6 +170,14 @@
           "enabled": true,
           "items": [
             {
+              "id": "1761725058490",
+              "title": "可可影视",
+              "href": "https://share.feijipan.com/s/ZxE6KMSM",
+              "description": "安卓：免费观看、超高清画质与智能体验于一身的全能型移动追剧平台",
+              "icon": "https://s41.ax1x.com/2026/01/30/pZfdpeH.png",
+              "enabled": true
+            },
+            {
               "id": "1761724973240",
               "title": "Hacker News",
               "href": "https://news.ycombinator.com/",
@@ -183,14 +191,6 @@
               "href": "https://www.producthunt.com/",
               "description": "Product Hunt is a curation of the best new products, every day. Discover the latest mobile apps, websites, and technology products that everyone&#x27;s talking about.",
               "icon": "/assets/favicon_1761725042705.webp",
-              "enabled": true
-            },
-            {
-              "id": "1761725058490",
-              "title": "可可影视",
-              "href": "https://share.feijipan.com/s/ZxE6KMSM",
-              "description": "安卓：免费观看、超高清画质与智能体验于一身的全能型移动追剧平台",
-              "icon": "https://s41.ax1x.com/2026/01/30/pZfdpeH.png",
               "enabled": true
             }
           ]
