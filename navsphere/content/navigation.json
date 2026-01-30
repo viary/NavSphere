@@ -22,6 +22,14 @@
           "enabled": true
         },
         {
+          "id": "1761724833829",
+          "title": "豆包AI",
+          "href": "https://www.doubao.com/",
+          "description": "智能聊天对话问答助手",
+          "icon": "https://s41.ax1x.com/2026/01/30/pZfUG40.jpg",
+          "enabled": true
+        },
+        {
           "id": "1741747111596",
           "title": "乌云影视",
           "href": "https://share.feijipan.com/s/3lZZPamE",
@@ -99,14 +107,6 @@
           "href": "https://free-for.dev/#/",
           "description": "Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions.",
           "icon": "/assets/favicon_1760507241370.webp",
-          "enabled": true
-        },
-        {
-          "id": "1761724833829",
-          "title": "豆包AI",
-          "href": "https://www.doubao.com/",
-          "description": "智能聊天对话问答助手",
-          "icon": "https://s41.ax1x.com/2026/01/30/pZfUG40.jpg",
           "enabled": true
         },
         {
