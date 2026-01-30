@@ -135,11 +135,11 @@
         },
         {
           "id": "item-1765686645674",
-          "enabled": true,
-          "title": "Google 趋势",
-          "href": "https://trends.google.com/trends/",
-          "description": "",
-          "icon": "/assets/favicon_1765686636721.webp"
+          "title": "黄金价格",
+          "href": "https://quote.cngold.org/gjs/jjs.html",
+          "description": "查看黄金实时价格",
+          "icon": "/assets/favicon_1769754220254.png",
+          "enabled": true
         },
         {
           "id": "1768145641850",
