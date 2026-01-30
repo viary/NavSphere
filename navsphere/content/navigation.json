@@ -152,7 +152,7 @@
       ],
       "subCategories": [],
       "description": "推荐热门资源",
-      "enabled": false
+      "enabled": true
     },
     {
       "id": "1761724945457",
