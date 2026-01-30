@@ -987,31 +987,6 @@
               "enabled": true
             }
           ]
-        },
-        {
-          "id": "baf3db58-404b-4385-80cb-c2ddcf5747fc",
-          "title": "经验技巧",
-          "icon": "Files",
-          "description": "",
-          "enabled": true,
-          "items": [
-            {
-              "id": "1765453428896",
-              "title": "AGENTS.md",
-              "href": "https://agents.md/",
-              "description": "AGENTS.md is a simple, open format for guiding coding agents, used by over 60k open-source projects. Think of it as a README for agents.",
-              "icon": "/assets/favicon_1765453432472.webp",
-              "enabled": true
-            },
-            {
-              "id": "1766148040930",
-              "title": "Website Authority Checker: Check the &quot;Authority&quot; Of Any Domain",
-              "href": "https://ahrefs.com/website-authority-checker",
-              "description": "Free tool to check the &quot;authority&quot; of any website based on the quality and quantity of its external backlinks.",
-              "icon": "/assets/favicon_1766148043836.webp",
-              "enabled": true
-            }
-          ]
         }
       ]
     },
