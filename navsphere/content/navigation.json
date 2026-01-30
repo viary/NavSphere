@@ -186,7 +186,16 @@
           "enabled": true
         }
       ],
-      "subCategories": []
+      "subCategories": [
+        {
+          "id": "305c28a4-67c8-435d-95a2-c70247bcb07c",
+          "title": "安卓影视",
+          "icon": "Folder",
+          "description": "收录精选安卓影视软件",
+          "enabled": true,
+          "items": []
+        }
+      ]
     },
     {
       "id": "2",
