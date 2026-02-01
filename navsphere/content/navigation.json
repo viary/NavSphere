@@ -86,14 +86,6 @@
           "enabled": true
         },
         {
-          "id": "1_7",
-          "title": "Tensor.art",
-          "href": "https://tensor.art/",
-          "description": "Tensor.art是一个免费的在线图像生成和模型托管平台。",
-          "icon": "/assets/images/logos/tensorart.webp",
-          "enabled": true
-        },
-        {
           "id": "1764304637626",
           "title": "Google 云端硬盘",
           "href": "https://drive.google.com/",
@@ -721,6 +713,14 @@
               "href": "https://lottiefiles.com/",
               "description": "Effortlessly bring the smallest, free, ready-to-use motion graphics for the web, app, social, and designs. Create, edit, test, collaborate, and ship Lottie animations in no time!",
               "icon": "/assets/favicon_1760427449858.webp",
+              "enabled": true
+            },
+            {
+              "id": "1_7",
+              "title": "Tensor.art",
+              "href": "https://tensor.art/",
+              "description": "Tensor.art是一个免费的在线图像生成和模型托管平台。",
+              "icon": "/assets/images/logos/tensorart.webp",
               "enabled": true
             }
           ]
