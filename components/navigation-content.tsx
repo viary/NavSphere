@@ -8,7 +8,7 @@ import { Sidebar } from '@/components/sidebar'
 import { SearchBar } from '@/components/search-bar'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Footer } from '@/components/footer'
-import { Github, Wechat, HelpCircle, Puzzle } from 'lucide-react'
+import { Github, Weixin, HelpCircle, Puzzle } from 'lucide-react'
 import { Button } from "@/registry/new-york/ui/button"
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -192,7 +192,7 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                   size="icon"
                   className="hover:bg-accent hover:text-accent-foreground"
                 >
-                  <Wechat className="h-5 w-5" />
+                  <Weixin className="h-5 w-5" />
                 </Button>
               </Link>
               <Button
