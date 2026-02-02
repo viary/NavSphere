@@ -129,7 +129,16 @@
           "icon": "Folder",
           "description": "收藏高清在线播放影视网站",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "1770040659123",
+              "title": "茉小影",
+              "href": "https://www.moxy.top/",
+              "description": "茉小影为您提供各种最新的电影电视剧,韩国电视剧,日本动漫,泰剧,美剧,综艺,等在线免费观看！",
+              "icon": "/assets/favicon_1770040668880.ico",
+              "enabled": true
+            }
+          ]
         }
       ]
     },
