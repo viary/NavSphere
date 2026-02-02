@@ -14,7 +14,7 @@ const SEARCH_ENGINES = [
   { id: 'google', name: '谷歌', url: 'https://www.google.com/search?q=' },
   { id: 'bing', name: '必应', url: 'https://cn.bing.com/search?q=' },
   { id: 'yandex', name: 'Yandex', url: 'https://yandex.com/search/?text=' },
-  { id: 'local', name: '本地', url: '' } // 新增本地选项，url留空
+  { id: 'local', name: '站内', url: '' } // 新增本地选项，url留空
 ]
 
 interface SearchBarProps {
