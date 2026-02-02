@@ -55,10 +55,10 @@
         },
         {
           "id": "1_5",
-          "title": "Producthunt",
-          "href": "https://www.producthunt.com/",
-          "description": "发现新鲜有趣的产品",
-          "icon": "/assets/images/logos/producthunt.webp",
+          "title": "摸鱼日报",
+          "href": "https://moyu.resgo.cc/",
+          "description": "每日摸鱼海报，专为摸鱼人士设计",
+          "icon": "https://s41.ax1x.com/2026/02/02/pZ4INHH.jpg",
           "enabled": true
         },
         {
