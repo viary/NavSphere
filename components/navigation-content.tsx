@@ -182,7 +182,7 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
               */}
               
               <Link
-                href="https://mp.weixin.qq.com/s/LnuWxUC7ZXf0q35QnPF6Aw"
+                href="https://mp.weixin.qq.com/s/jbXrOQIgslZQoM-YvG3Q4A"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="关注公众号"
