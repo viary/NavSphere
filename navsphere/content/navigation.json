@@ -120,6 +120,14 @@
               "description": "安卓：一款适合短剧爱好者的免费视频平台",
               "icon": "https://s41.ax1x.com/2026/02/01/pZ4mvUe.webp",
               "enabled": true
+            },
+            {
+              "id": "1770197681523",
+              "title": "网飞猫影视",
+              "href": "https://share.feijipan.com/s/2XWQc3GO",
+              "description": "安卓：免费追剧APP，提供国内影视大片，还拥有奈飞影片，支持免费观看，内置影视源很多。",
+              "icon": "https://pic1.imgdb.cn/item/6982080d67f4587158b8a2f2.webp",
+              "enabled": true
             }
           ]
         },
