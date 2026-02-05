@@ -50,7 +50,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  // 快捷键逻辑：esc关闭、ctrl+k聚焦、回车搜索 —— 核心修复：恢复依赖数组 [searchQuery, selectedEngine]
+  // 快捷键逻辑：恢复完整依赖，引擎切换立即生效
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -65,14 +65,13 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
         setIsFocused(true)
       }
 
-      // 回车触发搜索 —— 现在能捕获最新的selectedEngine
       if (event.key === 'Enter' && searchQuery.trim()) {
         handleSearch()
       }
     }
     document.addEventListener('keydown', handleKeyDown)
     return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [searchQuery, selectedEngine]) // 【唯一修复点】恢复selectedEngine依赖，解决状态捕获异常
+  }, [searchQuery, selectedEngine])
 
   const highlightText = (text: string) => {
     if (!searchQuery) return text
@@ -172,14 +171,14 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
           </button>
         )}
 
-        {/* 搜索按钮（放大镜） */}
+        {/* 搜索按钮（放大镜）- 仅修改此处：添加text-gray-500 */}
         <Button
           onClick={handleSearch}
           disabled={!searchQuery.trim()}
           className="absolute right-2 z-10 w-8 h-8 m-0 p-0 bg-transparent border-0 cursor-pointer
                     flex items-center justify-center hover:bg-accent rounded-full box-border"
         >
-          <Search className="h-4 w-4" />
+          <Search className="h-4 w-4 text-gray-500" />
         </Button>
       </div>
 
