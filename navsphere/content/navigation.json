@@ -68,14 +68,6 @@
           "description": "NewKit 提供精选的在线实用工具，JSON格式化、SQL美化、加密解密等，简洁高效，数据本地处理",
           "icon": "/assets/favicon_1765279307988.svg",
           "enabled": true
-        },
-        {
-          "id": "1768145641850",
-          "title": "microsoft 开发者",
-          "href": "https://partner.microsoft.com/zh-cn/dashboard/microsoftedge/overview",
-          "description": "edge 插件上传地址",
-          "icon": "/assets/favicon_1768145646425.png",
-          "enabled": true
         }
       ],
       "subCategories": [],
@@ -937,6 +929,14 @@
               "href": "https://payloadcms.com/",
               "description": "访问 payloadcms.com",
               "icon": "/assets/favicon_1763352611319.webp",
+              "enabled": true
+            },
+            {
+              "id": "1768145641850",
+              "title": "microsoft 开发者",
+              "href": "https://partner.microsoft.com/zh-cn/dashboard/microsoftedge/overview",
+              "description": "edge 插件上传地址",
+              "icon": "/assets/favicon_1768145646425.png",
               "enabled": true
             }
           ]
