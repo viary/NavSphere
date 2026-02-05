@@ -153,6 +153,14 @@
               "description": "茉小影为您提供各种最新的电影电视剧,韩国电视剧,日本动漫,泰剧,美剧,综艺,等在线免费观看！",
               "icon": "/assets/favicon_1770040668880.ico",
               "enabled": true
+            },
+            {
+              "id": "1770301259798",
+              "title": "低端影视",
+              "href": "https://ddys.la/",
+              "description": "低端影视：电影，电视剧，动漫为主",
+              "icon": "https://s41.ax1x.com/2026/02/05/pZIvfjH.png",
+              "enabled": true
             }
           ]
         }
