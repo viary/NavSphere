@@ -71,7 +71,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
     }
     document.addEventListener('keydown', handleKeyDown)
     return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [searchQuery, selectedEngine])
+  }, [searchQuery]) // 移除selectedEngine依赖，解决ESLint警告
 
   const highlightText = (text: string) => {
     if (!searchQuery) return text
@@ -114,29 +114,19 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
     <div ref={searchRef} className="relative w-full max-w-lg mx-auto">
       {/* 核心修复：外层容器增加 box-sizing，统一盒模型 */}
       <div className="relative flex items-center w-full h-10 box-border">
-        {/* 搜索引擎下拉按钮 - 完整兼容修复 */}
+        {/* 搜索引擎下拉按钮 - 移除非标准前缀，仅保留标准样式 */}
         <button
           onClick={() => setShowEngineList(!showEngineList)}
           className="absolute left-3 z-10 w-20 h-full m-0 p-0 bg-transparent border-0 cursor-pointer
                     flex items-center justify-between text-base font-normal text-muted-foreground
-                    box-sizing border-box"
+                    box-border"
           style={{
-            // 显式固化字号和行高，避免浏览器解析差异
             fontSize: '14px',
-            lineHeight: '1.2',
-            // 补充浏览器前缀，兼容老旧内核
-            WebkitAlignItems: 'center',
-            MozAlignItems: 'center'
+            lineHeight: '1.2'
           }}
         >
           {selectedEngine.name}
-          <ChevronDown 
-            className="h-4 w-4 flex-shrink-0" 
-            style={{
-              WebkitFlexShrink: 0,
-              MozFlexShrink: 0
-            }}
-          />
+          <ChevronDown className="h-4 w-4 flex-shrink-0" />
         </button>
 
         {/* 搜索引擎下拉列表 */}
@@ -157,7 +147,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
           </div>
         )}
 
-        {/* 搜索输入框 - 调整内边距，适配按钮尺寸 */}
+        {/* 搜索输入框 - 统一字号，适配按钮尺寸 */}
         <Input
           ref={inputRef}
           placeholder="输入关键词搜索..."
@@ -166,42 +156,28 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
           onFocus={() => setIsFocused(true)}
           className="w-full h-full pl-24 pr-20 m-0 rounded-lg border shadow-sm box-border"
           style={{
-            // 显式设置输入框字号，与搜索引擎名称保持一致
             fontSize: '14px',
             lineHeight: '1.2'
           }}
         />
 
-        {/* 清空按钮 - 兼容修复 */}
+        {/* 清空按钮 - 纯标准flex属性，无前缀 */}
         {searchQuery && (
           <button
             onClick={clearSearch}
             className="absolute right-10 z-10 w-8 h-8 m-0 p-0 bg-transparent border-0 cursor-pointer
-                      flex items-center justify-center hover:bg-muted rounded-full
-                      box-sizing border-box"
-            style={{
-              WebkitAlignItems: 'center',
-              MozAlignItems: 'center'
-            }}
+                      flex items-center justify-center hover:bg-muted rounded-full box-border"
           >
             <X className="h-4 w-4" />
           </button>
         )}
 
-        {/* 搜索按钮（放大镜）- 核心修复：移除transform，改用flex天然居中 */}
+        {/* 搜索按钮（放大镜）- 移除transform和前缀，纯标准flex居中 */}
         <Button
           onClick={handleSearch}
           disabled={!searchQuery.trim()}
           className="absolute right-2 z-10 w-8 h-8 m-0 p-0 bg-transparent border-0 cursor-pointer
-                    flex items-center justify-center hover:bg-accent rounded-full
-                    box-sizing border-box"
-          style={{
-            // 彻底移除transform，避免偏移；补充前缀兼容flex
-            WebkitAlignItems: 'center',
-            MozAlignItems: 'center',
-            WebkitJustifyContent: 'center',
-            MozJustifyContent: 'center'
-          }}
+                    flex items-center justify-center hover:bg-accent rounded-full box-border"
         >
           <Search className="h-4 w-4" />
         </Button>
