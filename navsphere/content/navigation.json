@@ -128,6 +128,14 @@
               "description": "安卓：免费追剧APP，提供国内影视大片，还拥有奈飞影片，支持免费观看，内置影视源很多。",
               "icon": "https://pic1.imgdb.cn/item/6982080d67f4587158b8a2f2.webp",
               "enabled": true
+            },
+            {
+              "id": "1770269357367",
+              "title": "TV121影视",
+              "href": "https://share.feijipan.com/s/z0VSDwLG",
+              "description": "安卓：一款主打全网影视资源聚合的优质观影软件",
+              "icon": "https://s41.ax1x.com/2026/02/05/pZIDxiD.png",
+              "enabled": true
             }
           ]
         },
