@@ -8,17 +8,15 @@ import { Search, X, ChevronDown } from 'lucide-react'
 import type { NavigationData, NavigationItem, NavigationSubItem } from '@/types/navigation'
 import type { SiteConfig } from '@/types/site'
 
-// 1. 核心改动：搜索引擎数组最后加【本地】选项
 const SEARCH_ENGINES = [
   { id: 'baidu', name: '百度', url: 'https://www.baidu.com/s?wd=' },
   { id: 'google', name: '谷歌', url: 'https://www.google.com/search?q=' },
   { id: 'bing', name: '必应', url: 'https://cn.bing.com/search?q=' },
   { id: 'yandex', name: 'Yandex', url: 'https://yandex.com/search/?text=' },
-  { id: 'local', name: '站内', url: '' } // 新增本地选项，url留空
+  { id: 'local', name: '站内', url: '' }
 ]
 
 interface SearchBarProps {
-  // 恢复原有必填参数，用于站内搜索
   navigationData: NavigationData
   onSearch: (query: string) => void
   searchResults: Array<{
@@ -35,7 +33,6 @@ interface SearchBarProps {
 
 export function SearchBar({ navigationData, onSearch, searchResults, searchQuery, siteConfig }: SearchBarProps) {
   const [isFocused, setIsFocused] = useState(false)
-  // 默认选中百度，也可以改成默认本地：SEARCH_ENGINES[4]
   const [selectedEngine, setSelectedEngine] = useState(SEARCH_ENGINES[0])
   const [showEngineList, setShowEngineList] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
@@ -68,7 +65,6 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
         setIsFocused(true)
       }
 
-      // 回车触发搜索
       if (event.key === 'Enter' && searchQuery.trim()) {
         handleSearch()
       }
@@ -77,7 +73,6 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [searchQuery, selectedEngine])
 
-  // 恢复站内搜索高亮逻辑
   const highlightText = (text: string) => {
     if (!searchQuery) return text
     const parts = text.split(new RegExp(`(${searchQuery})`, 'gi'))
@@ -87,7 +82,6 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
     )
   }
 
-  // 恢复站内搜索结果点击逻辑
   const handleItemSelect = (item: NavigationItem | NavigationSubItem) => {
     const itemWithHref = item as NavigationSubItem
     if (itemWithHref.href) {
@@ -98,43 +92,54 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
     setIsFocused(false)
   }
 
-  // 清空搜索
   const clearSearch = () => {
     onSearch('')
     setIsFocused(false)
     inputRef.current?.focus()
   }
 
-  // 2. 核心改动：搜索逻辑分支判断
   const handleSearch = () => {
     if (!searchQuery.trim()) return
-    // 选中【本地】→ 显示站内搜索结果
     if (selectedEngine.id === 'local') {
       setIsFocused(true)
-    } 
-    // 选中其他引擎 → 跳转到全网搜索
-    else {
+    } else {
       const searchUrl = selectedEngine.url + encodeURIComponent(searchQuery)
       window.open(searchUrl, siteConfig?.navigation?.linkTarget || '_blank')
     }
   }
 
-  // 显示站内搜索结果的条件
   const showResults = isFocused && searchQuery.trim().length > 0
 
   return (
     <div ref={searchRef} className="relative w-full max-w-lg mx-auto">
-      <div className="relative flex items-center">
-        {/* 搜索引擎下拉按钮 */}
+      {/* 核心修复：外层容器增加 box-sizing，统一盒模型 */}
+      <div className="relative flex items-center w-full h-10 box-border">
+        {/* 搜索引擎下拉按钮 - 完整兼容修复 */}
         <button
           onClick={() => setShowEngineList(!showEngineList)}
-          className="absolute left-3 top-1/2 transform -translate-y-1/2 h-6 w-20 flex items-center justify-between text-sm text-muted-foreground bg-transparent border-0 cursor-pointer"
+          className="absolute left-3 z-10 w-20 h-full m-0 p-0 bg-transparent border-0 cursor-pointer
+                    flex items-center justify-between text-base font-normal text-muted-foreground
+                    box-sizing border-box"
+          style={{
+            // 显式固化字号和行高，避免浏览器解析差异
+            fontSize: '14px',
+            lineHeight: '1.2',
+            // 补充浏览器前缀，兼容老旧内核
+            WebkitAlignItems: 'center',
+            MozAlignItems: 'center'
+          }}
         >
           {selectedEngine.name}
-          <ChevronDown className="h-3 w-3" />
+          <ChevronDown 
+            className="h-4 w-4 flex-shrink-0" 
+            style={{
+              WebkitFlexShrink: 0,
+              MozFlexShrink: 0
+            }}
+          />
         </button>
 
-        {/* 搜索引擎下拉列表（自动包含【本地】选项） */}
+        {/* 搜索引擎下拉列表 */}
         {showEngineList && (
           <div className="absolute left-3 top-full mt-1 bg-background border rounded-lg shadow-xl z-50 w-28 py-1">
             {SEARCH_ENGINES.map(engine => (
@@ -152,37 +157,57 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
           </div>
         )}
 
-        {/* 搜索输入框 */}
+        {/* 搜索输入框 - 调整内边距，适配按钮尺寸 */}
         <Input
           ref={inputRef}
           placeholder="输入关键词搜索..."
           value={searchQuery}
           onChange={(e) => onSearch(e.target.value)}
           onFocus={() => setIsFocused(true)}
-          className="pl-24 pr-20 h-10 rounded-lg border shadow-sm"
+          className="w-full h-full pl-24 pr-20 m-0 rounded-lg border shadow-sm box-border"
+          style={{
+            // 显式设置输入框字号，与搜索引擎名称保持一致
+            fontSize: '14px',
+            lineHeight: '1.2'
+          }}
         />
 
-        {/* 清空按钮 */}
+        {/* 清空按钮 - 兼容修复 */}
         {searchQuery && (
           <button
             onClick={clearSearch}
-            className="absolute right-10 top-1/2 transform -translate-y-1/2 h-6 w-6 p-0 hover:bg-muted rounded-full flex items-center justify-center"
+            className="absolute right-10 z-10 w-8 h-8 m-0 p-0 bg-transparent border-0 cursor-pointer
+                      flex items-center justify-center hover:bg-muted rounded-full
+                      box-sizing border-box"
+            style={{
+              WebkitAlignItems: 'center',
+              MozAlignItems: 'center'
+            }}
           >
-            <X className="h-3 w-3" />
+            <X className="h-4 w-4" />
           </button>
         )}
 
-        {/* 搜索按钮 */}
+        {/* 搜索按钮（放大镜）- 核心修复：移除transform，改用flex天然居中 */}
         <Button
           onClick={handleSearch}
           disabled={!searchQuery.trim()}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 h-6 w-6 p-0 hover:bg-accent rounded-full flex items-center justify-center"
+          className="absolute right-2 z-10 w-8 h-8 m-0 p-0 bg-transparent border-0 cursor-pointer
+                    flex items-center justify-center hover:bg-accent rounded-full
+                    box-sizing border-box"
+          style={{
+            // 彻底移除transform，避免偏移；补充前缀兼容flex
+            WebkitAlignItems: 'center',
+            MozAlignItems: 'center',
+            WebkitJustifyContent: 'center',
+            MozJustifyContent: 'center'
+          }}
         >
-          <Search className="h-3 w-3" />
+          <Search className="h-4 w-4" />
         </Button>
       </div>
 
-      {/* 3. 核心改动：恢复站内搜索结果渲染 */}
+      {/* 原有站内搜索结果渲染，无修改 */}
       {showResults && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-background border rounded-lg shadow-xl z-50 max-h-[70vh] overflow-hidden">
           <Command className="border-0 shadow-none">
