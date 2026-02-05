@@ -50,7 +50,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  // 快捷键逻辑：esc关闭、ctrl+k聚焦
+  // 快捷键逻辑：esc关闭、ctrl+k聚焦、回车搜索 —— 核心修复：恢复依赖数组 [searchQuery, selectedEngine]
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -65,13 +65,14 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
         setIsFocused(true)
       }
 
+      // 回车触发搜索 —— 现在能捕获最新的selectedEngine
       if (event.key === 'Enter' && searchQuery.trim()) {
         handleSearch()
       }
     }
     document.addEventListener('keydown', handleKeyDown)
     return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [searchQuery]) // 移除selectedEngine依赖，解决ESLint警告
+  }, [searchQuery, selectedEngine]) // 【唯一修复点】恢复selectedEngine依赖，解决状态捕获异常
 
   const highlightText = (text: string) => {
     if (!searchQuery) return text
@@ -112,9 +113,8 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
 
   return (
     <div ref={searchRef} className="relative w-full max-w-lg mx-auto">
-      {/* 核心修复：外层容器增加 box-sizing，统一盒模型 */}
       <div className="relative flex items-center w-full h-10 box-border">
-        {/* 搜索引擎下拉按钮 - 移除非标准前缀，仅保留标准样式 */}
+        {/* 搜索引擎下拉按钮 */}
         <button
           onClick={() => setShowEngineList(!showEngineList)}
           className="absolute left-3 z-10 w-20 h-full m-0 p-0 bg-transparent border-0 cursor-pointer
@@ -147,7 +147,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
           </div>
         )}
 
-        {/* 搜索输入框 - 统一字号，适配按钮尺寸 */}
+        {/* 搜索输入框 */}
         <Input
           ref={inputRef}
           placeholder="输入关键词搜索..."
@@ -161,7 +161,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
           }}
         />
 
-        {/* 清空按钮 - 纯标准flex属性，无前缀 */}
+        {/* 清空按钮 */}
         {searchQuery && (
           <button
             onClick={clearSearch}
@@ -172,7 +172,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
           </button>
         )}
 
-        {/* 搜索按钮（放大镜）- 移除transform和前缀，纯标准flex居中 */}
+        {/* 搜索按钮（放大镜） */}
         <Button
           onClick={handleSearch}
           disabled={!searchQuery.trim()}
@@ -183,7 +183,7 @@ export function SearchBar({ navigationData, onSearch, searchResults, searchQuery
         </Button>
       </div>
 
-      {/* 原有站内搜索结果渲染，无修改 */}
+      {/* 站内搜索结果渲染 */}
       {showResults && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-background border rounded-lg shadow-xl z-50 max-h-[70vh] overflow-hidden">
           <Command className="border-0 shadow-none">
