@@ -17,10 +17,10 @@ export function Footer({ siteInfo }: FooterProps) {
           {/* 免责声明：保留原有样式，仅微调间距 */}
           <p className="text-center text-xs text-gray-500 leading-relaxed">
             免责声明：{siteInfo.basic.title}（resgo.cc）为纯资源导航站点，未存储任何资源，所有链接均来源于网络。<br className="md:hidden" />
-            本站仅提供导航指向，若侵犯您的权益，请联系邮箱：<span className="text-gray-600">userac@163.com</span> 配合删除，不承担任何法律责任。
+            本站仅提供导航指向服务，若侵犯您的权益，请联系邮箱：<span className="text-gray-600">userac@163.com</span> 配合删除，不承担任何法律责任。
           </p>
           {/* 版权文字：固定在免责声明下方，保留样式 */}
-          <p className="text-center text-xs leading-loose text-gray-500 mt-2">
+          <p className="text-center text-xs leading-loose text-gray-500 mt-1">
             {currentYear} {siteInfo.basic.title}. All rights reserved.
           </p>
         </div>
