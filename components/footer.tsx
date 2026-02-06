@@ -11,15 +11,16 @@ export function Footer({ siteInfo }: FooterProps) {
 
   return (
     <footer className="border-t py-6 md:py-0">
-      <div className="container flex flex-col items-center gap-4 md:h-16 md:flex-row md:justify-center">
-        <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-          {/* 新增：免责声明（小灰字、更小字体，居中对齐） */}
-          <p className="text-center text-xs text-gray-500 leading-relaxed mb-2 md:mb-0">
-            免责声明：{siteInfo.basic.title}（resgo.cc）为纯资源导航站点，未存储任何影视、音乐、小说等资源，所有链接均来源于网络。<br className="md:hidden" />
-            本站仅提供导航指向服务，若链接侵犯您的权益，请联系邮箱：<span className="text-gray-600">xxx@xxx.com</span> 进行删除，本站将配合处理，不承担任何法律责任。
+      <div className="container flex flex-col items-center gap-4 md:h-auto md:flex-col md:justify-center">
+        {/* 核心改动：外层div强制所有设备用flex-col（纵向排列），取消md:flex-row */}
+        <div className="flex flex-col items-center gap-2 px-8 md:px-0">
+          {/* 免责声明：保留原有样式，仅微调间距 */}
+          <p className="text-center text-xs text-gray-500 leading-relaxed">
+            免责声明：{siteInfo.basic.title}（resgo.cc）为纯资源导航站点，未存储任何资源，所有链接均来源于网络。<br className="md:hidden" />
+            本站仅提供导航指向，若侵犯您的权益，请联系邮箱：<span className="text-gray-600">userac@163.com</span> 配合删除，不承担任何法律责任。
           </p>
-          {/* 原有版权文字：微调字体大小为xs，颜色改为gray-500（小灰字） */}
-          <p className="text-center text-xs leading-loose text-gray-500">
+          {/* 版权文字：固定在免责声明下方，保留样式 */}
+          <p className="text-center text-xs leading-loose text-gray-500 mt-2">
             {currentYear} {siteInfo.basic.title}. All rights reserved.
           </p>
         </div>
