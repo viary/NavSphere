@@ -275,10 +275,10 @@
             },
             {
               "id": "1765310098728",
-              "title": "mdBook Documentation",
-              "href": "https://rust-lang.github.io/mdBook/index.html",
-              "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
-              "icon": "/assets/img_1765686772245.webp",
+              "title": "owllook",
+              "href": "https://www.owlook.com.cn/",
+              "description": "免费网络小说搜索引擎，小说阅读",
+              "icon": "https://s41.ax1x.com/2026/02/07/pZTmcHx.webp",
               "enabled": true
             }
           ]
