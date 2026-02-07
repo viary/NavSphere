@@ -190,19 +190,19 @@
               "enabled": true
             },
             {
-              "id": "1760611134039",
-              "title": "巨潮资讯网",
-              "href": "https://www.cninfo.com.cn/",
-              "description": "巨潮资讯网",
-              "icon": "/assets/favicon_1760611181157.webp",
-              "enabled": true
-            },
-            {
               "id": "1760611357060",
               "title": "泡椒音乐",
               "href": "https://pjmp3.com/",
               "description": "免费无损FLAC无损音乐下载与试听网站",
               "icon": "https://s41.ax1x.com/2026/02/07/pZT9fVH.png",
+              "enabled": true
+            },
+            {
+              "id": "1760611134039",
+              "title": "巨潮资讯网",
+              "href": "https://www.cninfo.com.cn/",
+              "description": "巨潮资讯网",
+              "icon": "/assets/favicon_1760611181157.webp",
               "enabled": true
             }
           ]
