@@ -168,9 +168,9 @@
       "subCategories": [
         {
           "id": "1cf1cbfa-1a31-4b39-a6ca-a05f153ccbf5",
-          "title": "数据与分析",
-          "icon": "Book",
-          "description": "",
+          "title": "音乐网站",
+          "icon": "Folder",
+          "description": "分享各类在线无损音乐下载，在线听歌等资源网站",
           "enabled": true,
           "items": [
             {
