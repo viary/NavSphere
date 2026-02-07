@@ -209,9 +209,9 @@
         },
         {
           "id": "a45066a4-3622-43a4-acbb-873da6268788",
-          "title": "溢价观测工具",
-          "icon": "Database",
-          "description": "",
+          "title": "广播电台",
+          "icon": "Folder",
+          "description": "收集广播电台FM音频播客等资源",
           "enabled": true,
           "items": [
             {
