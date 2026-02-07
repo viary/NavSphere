@@ -198,14 +198,6 @@
               "enabled": true
             },
             {
-              "id": "1760611219040",
-              "title": "价值投资导航数据",
-              "href": "http://value500.com/",
-              "description": "坚守了十四年的投资数据与资讯网站",
-              "icon": "/assets/favicon_1760611256663.webp",
-              "enabled": true
-            },
-            {
               "id": "1760611357060",
               "title": "集思录",
               "href": "https://www.jisilu.cn/",
@@ -236,6 +228,14 @@
               "href": "https://palmmicro.com/woody/res/chinafuturecn.php",
               "description": "A股商品等基金净值计算工具",
               "icon": "/assets/favicon_1760611626932.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760611219040",
+              "title": "价值投资导航数据",
+              "href": "http://value500.com/",
+              "description": "坚守了十四年的投资数据与资讯网站",
+              "icon": "/assets/favicon_1760611256663.webp",
               "enabled": true
             }
           ]
