@@ -244,9 +244,9 @@
     },
     {
       "id": "1760512235168",
-      "title": "开源项目",
-      "icon": "Code",
-      "description": "",
+      "title": "阅读资讯",
+      "icon": "BookOpen",
+      "description": "收集免费小说软件，电子书，听书软件，漫画软件，报刊杂志等资源内容",
       "enabled": true,
       "items": [],
       "subCategories": [
