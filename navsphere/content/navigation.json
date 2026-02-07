@@ -153,6 +153,14 @@
               "description": "低端影视：电影，电视剧，动漫为主",
               "icon": "https://s41.ax1x.com/2026/02/05/pZIvfjH.png",
               "enabled": true
+            },
+            {
+              "id": "1760611219040",
+              "title": "价值投资导航数据",
+              "href": "http://value500.com/",
+              "description": "坚守了十四年的投资数据与资讯网站",
+              "icon": "/assets/favicon_1760611256663.webp",
+              "enabled": true
             }
           ]
         }
@@ -220,14 +228,6 @@
               "href": "https://palmmicro.com/woody/res/chinafuturecn.php",
               "description": "A股商品等基金净值计算工具",
               "icon": "/assets/favicon_1760611626932.webp",
-              "enabled": true
-            },
-            {
-              "id": "1760611219040",
-              "title": "价值投资导航数据",
-              "href": "http://value500.com/",
-              "description": "坚守了十四年的投资数据与资讯网站",
-              "icon": "/assets/favicon_1760611256663.webp",
               "enabled": true
             },
             {
