@@ -657,9 +657,9 @@
     },
     {
       "id": "1735265493940",
-      "title": "开发者工具包",
+      "title": "开发工具",
       "icon": "Box",
-      "description": "开发者工具，工具包",
+      "description": "各类开发者工具，工具包，开发资源",
       "enabled": true,
       "items": [],
       "subCategories": [
