@@ -139,6 +139,14 @@
           "enabled": true,
           "items": [
             {
+              "id": "1760611219040",
+              "title": "剧OK",
+              "href": "https://juok.cc/",
+              "description": "免费观看全网影视剧集，动漫，综艺等，有在线弹幕",
+              "icon": "https://s41.ax1x.com/2026/02/07/pZTZnKI.webp",
+              "enabled": true
+            },
+            {
               "id": "1770040659123",
               "title": "茉小影",
               "href": "https://www.moxy.top/",
@@ -152,14 +160,6 @@
               "href": "https://ddys.la/",
               "description": "低端影视：电影，电视剧，动漫为主",
               "icon": "https://s41.ax1x.com/2026/02/05/pZIvfjH.png",
-              "enabled": true
-            },
-            {
-              "id": "1760611219040",
-              "title": "剧OK",
-              "href": "https://juok.cc/",
-              "description": "免费观看全网影视剧集，动漫，综艺等，有在线弹幕",
-              "icon": "https://s41.ax1x.com/2026/02/07/pZTZnKI.webp",
               "enabled": true
             }
           ]
