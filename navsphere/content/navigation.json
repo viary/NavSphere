@@ -1003,9 +1003,9 @@
     },
     {
       "id": "1760610695230",
-      "title": "投资者工具包",
-      "icon": "Building",
-      "description": "",
+      "title": "音乐广播",
+      "icon": "Music",
+      "description": "分享各类在线音乐，无损音乐下载网站，听歌KTV，广播FM等资源",
       "enabled": true,
       "items": [],
       "subCategories": [
