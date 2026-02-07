@@ -159,6 +159,90 @@
       ]
     },
     {
+      "id": "1760610695230",
+      "title": "音乐广播",
+      "icon": "Music",
+      "description": "分享各类在线音乐，无损音乐下载网站，听歌KTV，广播FM等资源",
+      "enabled": true,
+      "items": [],
+      "subCategories": [
+        {
+          "id": "1cf1cbfa-1a31-4b39-a6ca-a05f153ccbf5",
+          "title": "数据与分析",
+          "icon": "Book",
+          "description": "",
+          "enabled": true,
+          "items": [
+            {
+              "id": "1760611119341",
+              "title": "TradingView",
+              "href": "https://www.tradingview.com/",
+              "description": "Where the world charts, chats, and trades markets. We&#39;re a supercharged super-charting platform and social network for traders and investors. Free to sign up.",
+              "icon": "/assets/favicon_1760611123647.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760611134039",
+              "title": "巨潮资讯网",
+              "href": "https://www.cninfo.com.cn/",
+              "description": "巨潮资讯网",
+              "icon": "/assets/favicon_1760611181157.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760611219040",
+              "title": "价值投资导航数据",
+              "href": "http://value500.com/",
+              "description": "坚守了十四年的投资数据与资讯网站",
+              "icon": "/assets/favicon_1760611256663.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760611357060",
+              "title": "集思录",
+              "href": "https://www.jisilu.cn/",
+              "description": "集思录，一个以数据为本的投资社区",
+              "icon": "/assets/favicon_1760611378684.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760669308127",
+              "title": "看财报-价值投资分析工具",
+              "href": "https://www.kancaibao.com/",
+              "description": "看财报为价值投资者提供上市公司财务数据,各项基本面分析指标,同时提供DCF折现工具、杜邦分析表、历史PE（市盈率）和PB（市净率）数据、还有多家公司对比和企业估值功能",
+              "icon": "/assets/favicon_1760669311999.webp",
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "id": "a45066a4-3622-43a4-acbb-873da6268788",
+          "title": "溢价观测工具",
+          "icon": "Database",
+          "description": "",
+          "enabled": true,
+          "items": [
+            {
+              "id": "1760611489487",
+              "title": "集思录-实时数据",
+              "href": "https://www.jisilu.cn/data/cbnew/#cb",
+              "description": "集思录-实时数据",
+              "icon": "/assets/favicon_1760611535023.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760611595643",
+              "title": "palmmicro",
+              "href": "https://palmmicro.com/woody/res/chinafuturecn.php",
+              "description": "A股商品等基金净值计算工具",
+              "icon": "/assets/favicon_1760611626932.webp",
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "2",
       "title": "实用工具",
       "icon": "Laptop",
@@ -995,90 +1079,6 @@
               "href": "https://analytics.google.com/",
               "description": "Google分析（Google Analytics）是一个由Google所提供的网站流量统计服务。",
               "icon": "/assets/images/logos/analytics.webp",
-              "enabled": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1760610695230",
-      "title": "音乐广播",
-      "icon": "Music",
-      "description": "分享各类在线音乐，无损音乐下载网站，听歌KTV，广播FM等资源",
-      "enabled": true,
-      "items": [],
-      "subCategories": [
-        {
-          "id": "1cf1cbfa-1a31-4b39-a6ca-a05f153ccbf5",
-          "title": "数据与分析",
-          "icon": "Book",
-          "description": "",
-          "enabled": true,
-          "items": [
-            {
-              "id": "1760611119341",
-              "title": "TradingView",
-              "href": "https://www.tradingview.com/",
-              "description": "Where the world charts, chats, and trades markets. We&#39;re a supercharged super-charting platform and social network for traders and investors. Free to sign up.",
-              "icon": "/assets/favicon_1760611123647.webp",
-              "enabled": true
-            },
-            {
-              "id": "1760611134039",
-              "title": "巨潮资讯网",
-              "href": "https://www.cninfo.com.cn/",
-              "description": "巨潮资讯网",
-              "icon": "/assets/favicon_1760611181157.webp",
-              "enabled": true
-            },
-            {
-              "id": "1760611219040",
-              "title": "价值投资导航数据",
-              "href": "http://value500.com/",
-              "description": "坚守了十四年的投资数据与资讯网站",
-              "icon": "/assets/favicon_1760611256663.webp",
-              "enabled": true
-            },
-            {
-              "id": "1760611357060",
-              "title": "集思录",
-              "href": "https://www.jisilu.cn/",
-              "description": "集思录，一个以数据为本的投资社区",
-              "icon": "/assets/favicon_1760611378684.webp",
-              "enabled": true
-            },
-            {
-              "id": "1760669308127",
-              "title": "看财报-价值投资分析工具",
-              "href": "https://www.kancaibao.com/",
-              "description": "看财报为价值投资者提供上市公司财务数据,各项基本面分析指标,同时提供DCF折现工具、杜邦分析表、历史PE（市盈率）和PB（市净率）数据、还有多家公司对比和企业估值功能",
-              "icon": "/assets/favicon_1760669311999.webp",
-              "enabled": true
-            }
-          ]
-        },
-        {
-          "id": "a45066a4-3622-43a4-acbb-873da6268788",
-          "title": "溢价观测工具",
-          "icon": "Database",
-          "description": "",
-          "enabled": true,
-          "items": [
-            {
-              "id": "1760611489487",
-              "title": "集思录-实时数据",
-              "href": "https://www.jisilu.cn/data/cbnew/#cb",
-              "description": "集思录-实时数据",
-              "icon": "/assets/favicon_1760611535023.webp",
-              "enabled": true
-            },
-            {
-              "id": "1760611595643",
-              "title": "palmmicro",
-              "href": "https://palmmicro.com/woody/res/chinafuturecn.php",
-              "description": "A股商品等基金净值计算工具",
-              "icon": "/assets/favicon_1760611626932.webp",
               "enabled": true
             }
           ]
