@@ -182,6 +182,14 @@
               "enabled": true
             },
             {
+              "id": "1760669308127",
+              "title": "1Music",
+              "href": "https://1music.cc/zh-CN",
+              "description": "免费高品质音乐试听下载，支持mp3/FLAC",
+              "icon": "https://s41.ax1x.com/2026/02/07/pZT915n.png",
+              "enabled": true
+            },
+            {
               "id": "1760611134039",
               "title": "巨潮资讯网",
               "href": "https://www.cninfo.com.cn/",
@@ -203,14 +211,6 @@
               "href": "https://www.jisilu.cn/",
               "description": "集思录，一个以数据为本的投资社区",
               "icon": "/assets/favicon_1760611378684.webp",
-              "enabled": true
-            },
-            {
-              "id": "1760669308127",
-              "title": "1Music",
-              "href": "https://1music.cc/zh-CN",
-              "description": "免费高品质音乐试听下载，支持mp3/FLAC",
-              "icon": "https://s41.ax1x.com/2026/02/07/pZT915n.png",
               "enabled": true
             }
           ]
