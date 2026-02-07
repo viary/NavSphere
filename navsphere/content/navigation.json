@@ -266,19 +266,19 @@
               "enabled": true
             },
             {
-              "id": "1760512493923",
-              "title": "VuePress",
-              "href": "https://vuepress.vuejs.org/",
-              "description": "Vue 驱动的静态网站生成器",
-              "icon": "/assets/favicon_1760512644195.webp",
-              "enabled": true
-            },
-            {
               "id": "1765310098728",
               "title": "owllook",
               "href": "https://www.owlook.com.cn/",
               "description": "免费网络小说搜索引擎，小说阅读",
               "icon": "https://s41.ax1x.com/2026/02/07/pZTmcHx.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760512493923",
+              "title": "VuePress",
+              "href": "https://vuepress.vuejs.org/",
+              "description": "Vue 驱动的静态网站生成器",
+              "icon": "/assets/favicon_1760512644195.webp",
               "enabled": true
             }
           ]
