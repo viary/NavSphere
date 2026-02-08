@@ -60,14 +60,6 @@
           "description": "每日摸鱼海报，专为摸鱼人士设计",
           "icon": "https://s41.ax1x.com/2026/02/02/pZ4INHH.jpg",
           "enabled": true
-        },
-        {
-          "id": "1765279305478",
-          "title": "NewKit-效率工具",
-          "href": "https://www.newkit.site/",
-          "description": "NewKit 提供精选的在线实用工具，JSON格式化、SQL美化、加密解密等，简洁高效，数据本地处理",
-          "icon": "/assets/favicon_1765279307988.svg",
-          "enabled": true
         }
       ],
       "subCategories": [],
@@ -360,6 +352,14 @@
               "href": "https://screenshots.pro/",
               "description": "App Screenshot Generator for App Store&Google Play,Create panoramic screenshots for iOS and Android apps. No account needed.",
               "icon": "/assets/img_1735258064656.webp",
+              "enabled": true
+            },
+            {
+              "id": "1765279305478",
+              "title": "NewKit-效率工具",
+              "href": "https://www.newkit.site/",
+              "description": "NewKit 提供精选的在线实用工具，JSON格式化、SQL美化、加密解密等，简洁高效，数据本地处理",
+              "icon": "/assets/favicon_1765279307988.svg",
               "enabled": true
             }
           ],
