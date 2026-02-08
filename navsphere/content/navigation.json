@@ -161,6 +161,14 @@
               "description": "低端影视：电影，电视剧，动漫为主",
               "icon": "https://s41.ax1x.com/2026/02/05/pZIvfjH.png",
               "enabled": true
+            },
+            {
+              "id": "1770544992587",
+              "title": "乌云影视",
+              "href": "https://wooyun.tv/?token=lnk_milo1wh200qi",
+              "description": "乌云影视在线视频网站，海量高清影视免费在线观看",
+              "icon": "https://s41.ax1x.com/2026/01/26/pZREOwn.jpg",
+              "enabled": true
             }
           ]
         }
