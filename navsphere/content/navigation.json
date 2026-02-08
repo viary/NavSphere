@@ -177,6 +177,14 @@
               "description": "茉小影为您提供各种最新的电影电视剧,韩国电视剧,日本动漫,泰剧,美剧,综艺,等在线免费观看！",
               "icon": "/assets/favicon_1770040668880.ico",
               "enabled": true
+            },
+            {
+              "id": "1770559743765",
+              "title": "厂长资源",
+              "href": "https://www.czzymovie.com/",
+              "description": "海量1080p经典影视免费观看”的网站，其内容涵盖了大量热门影视作品，包括韩剧、欧美剧、国产剧、番剧等",
+              "icon": "https://s41.ax1x.com/2026/02/08/pZTqXRg.png",
+              "enabled": true
             }
           ]
         }
