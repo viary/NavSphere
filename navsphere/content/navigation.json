@@ -272,6 +272,14 @@
               "description": "免费网络小说搜索引擎，小说阅读",
               "icon": "https://s41.ax1x.com/2026/02/07/pZTmcHx.webp",
               "enabled": true
+            },
+            {
+              "id": "item-1765594481103",
+              "title": "Multi-Platform Theme Generator & Converter",
+              "href": "https://www.tinte.dev/",
+              "description": "Create, convert, and export beautiful themes for VS Code, shadcn/ui, Rayso, TweakCN, terminals, and more. Generate semantic color palettes using OKLCH color space with live previews.",
+              "icon": "/assets/favicon_1765594470605.webp",
+              "enabled": true
             }
           ]
         }
@@ -761,14 +769,6 @@
               "description": "Jumpstart your app development process with pre-built solutions from Vercel and our community.",
               "icon": "/assets/favicon_1765416698840.webp",
               "enabled": true
-            },
-            {
-              "id": "item-1765594481103",
-              "enabled": true,
-              "title": "Multi-Platform Theme Generator & Converter",
-              "href": "https://www.tinte.dev/",
-              "description": "Create, convert, and export beautiful themes for VS Code, shadcn/ui, Rayso, TweakCN, terminals, and more. Generate semantic color palettes using OKLCH color space with live previews.",
-              "icon": "/assets/favicon_1765594470605.webp"
             }
           ]
         },
