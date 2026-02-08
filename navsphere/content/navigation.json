@@ -288,7 +288,7 @@
     {
       "id": "2",
       "title": "实用工具",
-      "icon": "Laptop",
+      "icon": "Briefcase",
       "items": [],
       "subCategories": [
         {
@@ -479,7 +479,7 @@
           ]
         }
       ],
-      "description": "",
+      "description": "实用工具提供海量免费、专业、即用即走的高效工具集合,涵盖办公效率、图片视频设计、编程开发、日常生活等场景",
       "enabled": true
     },
     {
