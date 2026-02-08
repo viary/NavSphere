@@ -169,6 +169,14 @@
               "description": "低端影视：电影，电视剧，动漫为主",
               "icon": "https://s41.ax1x.com/2026/02/05/pZIvfjH.png",
               "enabled": true
+            },
+            {
+              "id": "1770545325684",
+              "title": "TV121影院",
+              "href": "https://tv121.tv?token=lnk_mjuwemm10055",
+              "description": "TV121在线高清影视大全，在线观看的私人电影院",
+              "icon": "https://pic1.imgdb.cn/item/698860a3206b1846922aa341.webp",
+              "enabled": true
             }
           ]
         }
