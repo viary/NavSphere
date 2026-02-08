@@ -374,6 +374,24 @@
           "enabled": true
         },
         {
+          "id": "7",
+          "title": "在线配色",
+          "href": "#在线配色",
+          "icon": "Book",
+          "description": "",
+          "items": [
+            {
+              "id": "7_1",
+              "title": "Color Hunt",
+              "href": "https://colorhunt.co/",
+              "description": "色彩搭配",
+              "icon": "/assets/images/logos/colorhunt.webp",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
           "id": "4",
           "title": "图形创意",
           "href": "#图形创意",
@@ -462,24 +480,6 @@
               "href": "https://framer.com/",
               "description": "Design everything from detailed icons to high-fidelity interactions—all in one place.",
               "icon": "/assets/images/logos/framer.webp",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
-          "id": "7",
-          "title": "在线配色",
-          "href": "#在线配色",
-          "icon": "Book",
-          "description": "",
-          "items": [
-            {
-              "id": "7_1",
-              "title": "Color Hunt",
-              "href": "https://colorhunt.co/",
-              "description": "色彩搭配",
-              "icon": "/assets/images/logos/colorhunt.webp",
               "enabled": true
             }
           ],
