@@ -484,7 +484,7 @@
     },
     {
       "id": "9",
-      "title": "AI工具包",
+      "title": "AI工具集",
       "icon": "Brain",
       "items": [],
       "subCategories": [
@@ -695,7 +695,7 @@
           ]
         }
       ],
-      "description": "",
+      "description": "专注聚合全球优质AI人工智能工具,涵盖AI写作、文本生成、图片生成、视频处理、代码开发、语音识别等10+领域精选AI应用推荐",
       "enabled": true
     },
     {
