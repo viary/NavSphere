@@ -382,10 +382,10 @@
           "items": [
             {
               "id": "7_1",
-              "title": "Color Hunt",
-              "href": "https://colorhunt.co/",
-              "description": "色彩搭配",
-              "icon": "/assets/images/logos/colorhunt.webp",
+              "title": "iLovePDF",
+              "href": "https://www.ilovepdf.com/zh-cn",
+              "description": "提供超过 20 种核心功能，分为五大类：工作流程（如合并、拆分、排列、提取页面）、转换工具（Word/PPT/Excel/JPG/HTML 与 PDF 双向互转）、编辑功能（添加水印、页码、文本、裁剪、旋转）、安全设置（加密、解密、签名、标记密文）以及优化修复（压缩、OCR 识别、修复损坏文件、转 PDF/A 存档格式）",
+              "icon": "https://s41.ax1x.com/2026/02/08/pZTO17q.png",
               "enabled": true
             },
             {
