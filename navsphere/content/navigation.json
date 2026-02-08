@@ -375,10 +375,10 @@
         },
         {
           "id": "7",
-          "title": "在线配色",
+          "title": "格式转换",
           "href": "#在线配色",
-          "icon": "Book",
-          "description": "",
+          "icon": "Folder",
+          "description": "专业免费在线文档，图片，视频转换工具,支持190+种格式。一键批量PDF、Word、Excel、PPT，PNG，MP4，MP3等格式转换,精准还原排版。",
           "items": [
             {
               "id": "7_1",
