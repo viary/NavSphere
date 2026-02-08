@@ -232,10 +232,10 @@
             },
             {
               "id": "1760611489487",
-              "title": "集思录-实时数据",
-              "href": "https://www.jisilu.cn/data/cbnew/#cb",
-              "description": "集思录-实时数据",
-              "icon": "/assets/favicon_1760611535023.webp",
+              "title": "云听",
+              "href": "https://www.radio.cn/pc-portal/erji/radioStation.html",
+              "description": "云听app是一款手机听书听广播FM的音频app，app内汇集非常多种类的栏目内容，例如听书、音乐、电台、广播等等",
+              "icon": "https://s41.ax1x.com/2026/02/08/pZTrCLR.png",
               "enabled": true
             }
           ]
