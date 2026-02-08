@@ -293,10 +293,10 @@
       "subCategories": [
         {
           "id": "3",
-          "title": "在线工具",
+          "title": "综合工具",
           "href": "#在线工具",
           "icon": "Folder",
-          "description": "",
+          "description": "收录多功能的综合工具",
           "items": [
             {
               "id": "3_1",
