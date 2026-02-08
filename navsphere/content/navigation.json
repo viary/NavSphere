@@ -223,19 +223,19 @@
               "enabled": true
             },
             {
-              "id": "1760611489487",
-              "title": "集思录-实时数据",
-              "href": "https://www.jisilu.cn/data/cbnew/#cb",
-              "description": "集思录-实时数据",
-              "icon": "/assets/favicon_1760611535023.webp",
-              "enabled": true
-            },
-            {
               "id": "1760611595643",
               "title": "Sao.fm",
               "href": "https://sao.fm/",
               "description": "提供全球主流电台，流媒体，广播，音乐电台等内容收听",
               "icon": "https://s41.ax1x.com/2026/02/08/pZTDWIf.png",
+              "enabled": true
+            },
+            {
+              "id": "1760611489487",
+              "title": "集思录-实时数据",
+              "href": "https://www.jisilu.cn/data/cbnew/#cb",
+              "description": "集思录-实时数据",
+              "icon": "/assets/favicon_1760611535023.webp",
               "enabled": true
             }
           ]
