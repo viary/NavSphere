@@ -395,6 +395,14 @@
               "description": "Convertio - 在线转换文件的简单工具。支持超过309种不同的文档、图像、电子表格、电子书、文档、演示文稿、音频和视频格式。",
               "icon": "/assets/favicon_1770560790018.png",
               "enabled": true
+            },
+            {
+              "id": "1770561882520",
+              "title": "VidBee-视频转换",
+              "href": "https://vidbee.org/zh/tools/video-converter/",
+              "description": "在浏览器中即时转换视频与音频格式，支持 MP4、WebM、MOV、MKV、AVI、M4V、3GP、FLV、TS 以及 MP3/M4A/WAV 输出。全程本地处理、不上传不注册，支持批量队列与进度提示，单文件最高 2GB，保留画质音质，支持自定义命名与快速下载，无需安装，跨平台免费使用，适合剪辑、备份与分享。",
+              "icon": "/assets/favicon_1770561887990.png",
+              "enabled": true
             }
           ],
           "enabled": true
