@@ -758,6 +758,31 @@
           ]
         },
         {
+          "id": "02c7fd28-6bbd-4088-a56a-fbfbce7b099a",
+          "title": "AI图像",
+          "icon": "Folder",
+          "description": "收集AI图像生成创作工具模型",
+          "enabled": true,
+          "items": [
+            {
+              "id": "1760435669948",
+              "title": "Nano Banana",
+              "href": "https://aistudio.google.com/gen-media",
+              "description": "在AI 图像生成领域，神秘的Nano Banana 悄悄窜起，现已正名为Gemini 2.5 Flash Image。它最初并非透过Google 官方宣传引起关注，而是在LM Arena 评比平台上表现亮眼，还掀起 Gemini 公仔风潮！",
+              "icon": "/assets/favicon_1760435673911.webp",
+              "enabled": true
+            },
+            {
+              "id": "1_6",
+              "title": "Leonardo.AI",
+              "href": "https://app.leonardo.ai/",
+              "description": "Leonardo.AI是一个人工智能绘图社区和工具。它基于Stable Diffusion人工智能模型,深度集成了其各种插件,提供强大的图片生成和创作功能。",
+              "icon": "/assets/images/logos/leonardo.webp",
+              "enabled": true
+            }
+          ]
+        },
+        {
           "id": "21bf96f3-acb0-4e28-aaa8-2759ac55d278",
           "title": "MCP Server",
           "icon": "Edit",
@@ -795,31 +820,6 @@
               "href": "https://snackprompt.com/",
               "description": "A platform to share and discover amazing AI prompts and resources.",
               "icon": "/assets/favicon_1765285552557.webp",
-              "enabled": true
-            }
-          ]
-        },
-        {
-          "id": "02c7fd28-6bbd-4088-a56a-fbfbce7b099a",
-          "title": "AI图像",
-          "icon": "Folder",
-          "description": "收集AI图像生成创作工具模型",
-          "enabled": true,
-          "items": [
-            {
-              "id": "1760435669948",
-              "title": "Nano Banana",
-              "href": "https://aistudio.google.com/gen-media",
-              "description": "在AI 图像生成领域，神秘的Nano Banana 悄悄窜起，现已正名为Gemini 2.5 Flash Image。它最初并非透过Google 官方宣传引起关注，而是在LM Arena 评比平台上表现亮眼，还掀起 Gemini 公仔风潮！",
-              "icon": "/assets/favicon_1760435673911.webp",
-              "enabled": true
-            },
-            {
-              "id": "1_6",
-              "title": "Leonardo.AI",
-              "href": "https://app.leonardo.ai/",
-              "description": "Leonardo.AI是一个人工智能绘图社区和工具。它基于Stable Diffusion人工智能模型,深度集成了其各种插件,提供强大的图片生成和创作功能。",
-              "icon": "/assets/images/logos/leonardo.webp",
               "enabled": true
             }
           ]
