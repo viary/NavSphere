@@ -451,40 +451,6 @@
           "enabled": true
         },
         {
-          "id": "5",
-          "title": "编程设计",
-          "href": "#界面设计",
-          "icon": "Folder",
-          "description": "收集各类编程开发，设计，运维等常用工具",
-          "items": [
-            {
-              "id": "5_1",
-              "title": "Figma",
-              "href": "https://www.figma.com/",
-              "description": "在线UI设计工具",
-              "icon": "/assets/images/logos/figma.webp",
-              "enabled": true
-            },
-            {
-              "id": "3_2",
-              "title": "JSON Editor Online",
-              "href": "https://jsoneditoronline.org/",
-              "description": "在线的JSON编辑器，包括格式化，可视化，对比，显示行号功能。",
-              "icon": "/assets/images/logos/json.webp",
-              "enabled": true
-            },
-            {
-              "id": "3_4",
-              "title": "SQL格式化",
-              "href": "https://www.dpriver.com/pp/sqlformat.htm",
-              "description": "在线美化SQL语句的工具，格式化方便阅读",
-              "icon": "/assets/images/logos/sqlformat.webp",
-              "enabled": true
-            }
-          ],
-          "enabled": true
-        },
-        {
           "id": "6",
           "title": "视频音频",
           "href": "#交互动效",
@@ -521,6 +487,40 @@
               "href": "https://framer.com/",
               "description": "Design everything from detailed icons to high-fidelity interactions—all in one place.",
               "icon": "/assets/images/logos/framer.webp",
+              "enabled": true
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "5",
+          "title": "编程设计",
+          "href": "#界面设计",
+          "icon": "Folder",
+          "description": "收集各类编程开发，设计，运维等常用工具",
+          "items": [
+            {
+              "id": "5_1",
+              "title": "Figma",
+              "href": "https://www.figma.com/",
+              "description": "在线UI设计工具",
+              "icon": "/assets/images/logos/figma.webp",
+              "enabled": true
+            },
+            {
+              "id": "3_2",
+              "title": "JSON Editor Online",
+              "href": "https://jsoneditoronline.org/",
+              "description": "在线的JSON编辑器，包括格式化，可视化，对比，显示行号功能。",
+              "icon": "/assets/images/logos/json.webp",
+              "enabled": true
+            },
+            {
+              "id": "3_4",
+              "title": "SQL格式化",
+              "href": "https://www.dpriver.com/pp/sqlformat.htm",
+              "description": "在线美化SQL语句的工具，格式化方便阅读",
+              "icon": "/assets/images/logos/sqlformat.webp",
               "enabled": true
             }
           ],
