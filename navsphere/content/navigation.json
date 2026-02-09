@@ -340,6 +340,14 @@
           "description": "收录多功能的综合工具",
           "items": [
             {
+              "id": "1765279305478",
+              "title": "NewKit-效率工具",
+              "href": "https://www.newkit.site/",
+              "description": "NewKit 提供精选的在线实用工具，JSON格式化、SQL美化、加密解密等，简洁高效，数据本地处理",
+              "icon": "/assets/favicon_1765279307988.svg",
+              "enabled": true
+            },
+            {
               "id": "3_2",
               "title": "JSON Editor Online",
               "href": "https://jsoneditoronline.org/",
@@ -361,14 +369,6 @@
               "href": "https://www.dpriver.com/pp/sqlformat.htm",
               "description": "在线美化SQL语句的工具，格式化方便阅读",
               "icon": "/assets/images/logos/sqlformat.webp",
-              "enabled": true
-            },
-            {
-              "id": "1765279305478",
-              "title": "NewKit-效率工具",
-              "href": "https://www.newkit.site/",
-              "description": "NewKit 提供精选的在线实用工具，JSON格式化、SQL美化、加密解密等，简洁高效，数据本地处理",
-              "icon": "/assets/favicon_1765279307988.svg",
               "enabled": true
             }
           ],
