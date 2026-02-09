@@ -727,9 +727,9 @@
         },
         {
           "id": "eb656a11-5442-4670-9cb6-9ba9bd08682f",
-          "title": "AI 代码生成助手",
-          "icon": "Book",
-          "description": "",
+          "title": "AI 编程",
+          "icon": "Folder",
+          "description": "收集AI辅助编程助手工具",
           "enabled": true,
           "items": [
             {
