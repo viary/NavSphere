@@ -680,6 +680,14 @@
               "description": "Introducing the Windsurf Editor\nThe new purpose-built IDE to harness magic",
               "icon": "/assets/img_1737529843741.webp",
               "enabled": true
+            },
+            {
+              "id": "1752662613676",
+              "title": "Kiro",
+              "href": "https://kiro.dev/",
+              "description": "The AI IDE for prototype to production\n",
+              "icon": "/assets/img_1752662633580.webp",
+              "enabled": true
             }
           ]
         },
@@ -981,16 +989,7 @@
           "icon": "Edit",
           "description": "",
           "enabled": true,
-          "items": [
-            {
-              "id": "1752662613676",
-              "title": "Kiro",
-              "href": "https://kiro.dev/",
-              "description": "The AI IDE for prototype to production\n",
-              "icon": "/assets/img_1752662633580.webp",
-              "enabled": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "47206329-6eed-422c-bdc9-c7cec1eb5190",
