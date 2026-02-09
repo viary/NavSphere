@@ -1324,14 +1324,6 @@
           ]
         },
         {
-          "id": "0ed6d8b1-effe-4535-8cde-60ec38f9c96c",
-          "title": "AI 检测工具",
-          "icon": "BookOpen",
-          "description": "",
-          "enabled": true,
-          "items": []
-        },
-        {
           "id": "6e0eb7f0-860e-43f0-bede-6e36205483e5",
           "title": "付费订阅平台",
           "icon": "BookOpen",
