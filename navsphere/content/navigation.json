@@ -839,6 +839,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "88427eff-f995-451d-8455-425d419a501f",
+          "title": "AI音频",
+          "icon": "Folder",
+          "description": "收集AI音频处理编辑转化工具",
+          "enabled": true,
+          "items": []
         }
       ],
       "description": "专注聚合全球优质AI人工智能工具,涵盖AI写作、文本生成、图片生成、视频处理、代码开发、语音识别等10+领域精选AI应用推荐",
