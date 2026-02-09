@@ -194,6 +194,14 @@
               "description": "精选安卓系统电视直播TV盒子软件，覆盖各大电视频道，让您更便捷看电视节目",
               "icon": "https://s41.ax1x.com/2026/02/09/pZ78YmF.webp",
               "enabled": true
+            },
+            {
+              "id": "1770628485319",
+              "title": "橘汁TV",
+              "href": "https://pan.baidu.com/s/1qO4o7xxRRJPGZ_gm24lpcw?pwd=kr4a",
+              "description": "点播+直播：橘汁TV电视版是一款专为智能电视设备推出的TV端影视追剧播放软件，4K画质、全网影视聚合、免费播放，没有任何广告，纯净式播放!",
+              "icon": "https://s41.ax1x.com/2026/02/09/pZ78r6K.png",
+              "enabled": true
             }
           ]
         }
