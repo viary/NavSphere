@@ -570,6 +570,14 @@
               "description": "Highly customizable React library for workflow builders, no-code apps, image processing, visualizers, and more",
               "icon": "/assets/favicon_1760427423590.webp",
               "enabled": true
+            },
+            {
+              "id": "1760433270740",
+              "title": "AI SDK",
+              "href": "https://ai-sdk.dev/",
+              "description": "The AI Toolkit for TypeScript, from the creators of Next.js.",
+              "icon": "/assets/favicon_1760433274445.webp",
+              "enabled": true
             }
           ],
           "enabled": true
@@ -1074,14 +1082,6 @@
           "description": "",
           "enabled": true,
           "items": [
-            {
-              "id": "1760433270740",
-              "title": "AI SDK",
-              "href": "https://ai-sdk.dev/",
-              "description": "The AI Toolkit for TypeScript, from the creators of Next.js.",
-              "icon": "/assets/favicon_1760433274445.webp",
-              "enabled": true
-            },
             {
               "id": "1763352609100",
               "title": "Payloadcms",
