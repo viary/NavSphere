@@ -1055,16 +1055,7 @@
           "icon": "Book",
           "description": "",
           "enabled": true,
-          "items": [
-            {
-              "id": "1760429456405",
-              "title": "Remotion | Make videos programmatically",
-              "href": "https://www.remotion.dev/",
-              "description": "Make videos programmatically，用代码制作视频",
-              "icon": "/assets/favicon_1760429458803.webp",
-              "enabled": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "e4c71dbf-d8c2-4dba-8c7e-b9cef0366a84",
