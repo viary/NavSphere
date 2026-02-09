@@ -468,10 +468,10 @@
         },
         {
           "id": "5",
-          "title": "界面设计",
+          "title": "编程设计",
           "href": "#界面设计",
           "icon": "Folder",
-          "description": "",
+          "description": "收集各类编程开发，设计，运维等常用工具",
           "items": [
             {
               "id": "5_1",
