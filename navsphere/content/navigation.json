@@ -729,14 +729,6 @@
               "description": "AI生成PPT工具",
               "icon": "/assets/img_1736911490095.webp",
               "enabled": true
-            },
-            {
-              "id": "1764162262399",
-              "title": "Google NotebookLM | AI 研究工具与思考伙伴",
-              "href": "https://notebooklm.google/",
-              "description": "认识 NotebookLM：给力的 AI 研究工具与思考伙伴，可以帮助您分析来源、理清复杂的资料及转换内容。",
-              "icon": "/assets/favicon_1764162265139.svg",
-              "enabled": true
             }
           ]
         },
@@ -855,7 +847,16 @@
           "icon": "Folder",
           "description": "收集AI文字写作创作文字编辑工具",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "1764162262399",
+              "title": "Google NotebookLM",
+              "href": "https://notebooklm.google/",
+              "description": "认识 NotebookLM：给力的 AI 研究工具与思考伙伴，可以帮助您分析来源、理清复杂的资料及转换内容。",
+              "icon": "/assets/favicon_1764162265139.svg",
+              "enabled": true
+            }
+          ]
         }
       ],
       "description": "专注聚合全球优质AI人工智能工具,涵盖AI写作、文本生成、图片生成、视频处理、代码开发、语音识别等10+领域精选AI应用推荐",
