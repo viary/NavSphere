@@ -594,6 +594,14 @@
               "description": "Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions.",
               "icon": "/assets/favicon_1760507315276.webp",
               "enabled": true
+            },
+            {
+              "id": "1760512493923",
+              "title": "VuePress",
+              "href": "https://vuepress.vuejs.org/",
+              "description": "Vue 驱动的静态网站生成器",
+              "icon": "/assets/favicon_1760512644195.webp",
+              "enabled": true
             }
           ],
           "enabled": true
@@ -1114,16 +1122,7 @@
           "icon": "Code",
           "description": "",
           "enabled": true,
-          "items": [
-            {
-              "id": "1760512493923",
-              "title": "VuePress",
-              "href": "https://vuepress.vuejs.org/",
-              "description": "Vue 驱动的静态网站生成器",
-              "icon": "/assets/favicon_1760512644195.webp",
-              "enabled": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "044a42a2-b7be-4a19-bce8-1bc3fd98f052",
