@@ -179,6 +179,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "2f4a7799-7ec7-4196-b280-424a9dd32e09",
+          "title": "电视播放",
+          "icon": "Folder",
+          "description": "精选电视盒子TV软件，包括电视点播，电视直播",
+          "enabled": true,
+          "items": []
         }
       ]
     },
