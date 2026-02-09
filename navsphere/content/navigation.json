@@ -672,6 +672,14 @@
               "description": "Unleash Claude’s raw power directly in your terminal. Search million-line codebases instantly. Turn hours-long workflows into a single command. Your tools. Your workflow. Your codebase, evolving at thought speed.",
               "icon": "/assets/img_1752662771107.webp",
               "enabled": true
+            },
+            {
+              "id": "1737529752867",
+              "title": "Windsurf",
+              "href": "https://codeium.com/",
+              "description": "Introducing the Windsurf Editor\nThe new purpose-built IDE to harness magic",
+              "icon": "/assets/img_1737529843741.webp",
+              "enabled": true
             }
           ]
         },
@@ -974,14 +982,6 @@
           "description": "",
           "enabled": true,
           "items": [
-            {
-              "id": "1737529752867",
-              "title": "Windsurf",
-              "href": "https://codeium.com/",
-              "description": "Introducing the Windsurf Editor\nThe new purpose-built IDE to harness magic",
-              "icon": "/assets/img_1737529843741.webp",
-              "enabled": true
-            },
             {
               "id": "1752662613676",
               "title": "Kiro",
