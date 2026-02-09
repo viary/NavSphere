@@ -709,9 +709,9 @@
         },
         {
           "id": "cbb3e33d-408b-41ba-9e9a-e0444303e3ff",
-          "title": "生产力工具",
-          "icon": "Book",
-          "description": "",
+          "title": "AI办公",
+          "icon": "Folder",
+          "description": "收集AI办公工具，提高生产力工具",
           "enabled": true,
           "items": [
             {
