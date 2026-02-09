@@ -349,10 +349,10 @@
             },
             {
               "id": "3_3",
-              "title": "Beautifier",
-              "href": "https://beautifier.io/",
-              "description": "Beautify JavaScript, JSON, React.js, HTML, CSS, SCSS, and SASS",
-              "icon": "/assets/images/logos/beautifier.webp",
+              "title": "EditTools",
+              "href": "https://edittools.org/zh-cn",
+              "description": "EditTools是一款集多功能于一体的在线多媒体处理平台，其核心特点是全格式兼容与零门槛操作的完美结合。网站提供超过20类专项工具，覆盖PDF编辑（分割、合并、转换）、图片处理（压缩、裁剪、水印）、音视频编辑（剪切、合并、格式转换）等场景，并创新集成AI艺术生成、条码制作等特色功能",
+              "icon": "https://s41.ax1x.com/2026/02/09/pZ7DfhT.png",
               "enabled": true
             },
             {
