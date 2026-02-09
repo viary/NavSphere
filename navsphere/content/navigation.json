@@ -632,6 +632,14 @@
               "description": "Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.",
               "icon": "/assets/favicon_1760513560381.webp",
               "enabled": true
+            },
+            {
+              "id": "1737529639971",
+              "title": "Cursor",
+              "href": "https://www.cursor.com/",
+              "description": "The AI Code Editor Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
+              "icon": "/assets/img_1737529713172.webp",
+              "enabled": true
             }
           ]
         },
@@ -934,14 +942,6 @@
           "description": "",
           "enabled": true,
           "items": [
-            {
-              "id": "1737529639971",
-              "title": "Cursor",
-              "href": "https://www.cursor.com/",
-              "description": "The AI Code Editor Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
-              "icon": "/assets/img_1737529713172.webp",
-              "enabled": true
-            },
             {
               "id": "1737529752867",
               "title": "Windsurf",
