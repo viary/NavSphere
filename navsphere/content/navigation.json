@@ -1018,14 +1018,6 @@
           ]
         },
         {
-          "id": "2040df1a-cbcd-40fa-a85c-151b5735fbd2",
-          "title": "画图工具",
-          "icon": "Book",
-          "description": "架构图，流程图",
-          "enabled": true,
-          "items": []
-        },
-        {
           "id": "47206329-6eed-422c-bdc9-c7cec1eb5190",
           "title": "域名注册",
           "icon": "Files",
