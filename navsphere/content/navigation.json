@@ -783,6 +783,23 @@
           ]
         },
         {
+          "id": "09c733b5-f225-43c1-9726-ab70250cebfe",
+          "title": "AI写作",
+          "icon": "Folder",
+          "description": "收集AI文字写作创作文字编辑工具",
+          "enabled": true,
+          "items": [
+            {
+              "id": "1764162262399",
+              "title": "NotebookLM",
+              "href": "https://notebooklm.google/",
+              "description": "认识Google  NotebookLM：给力的 AI 研究工具与思考伙伴，可以帮助您分析来源、理清复杂的资料及转换内容。",
+              "icon": "/assets/favicon_1764162265139.svg",
+              "enabled": true
+            }
+          ]
+        },
+        {
           "id": "21bf96f3-acb0-4e28-aaa8-2759ac55d278",
           "title": "MCP Server",
           "icon": "Edit",
@@ -837,23 +854,6 @@
               "href": "https://suno.com/home",
               "description": "Create stunning original music for free in seconds using AI. Make your own masterpieces, share with friends, and discover music from artists worldwide.",
               "icon": "/assets/favicon_1760435376153.webp",
-              "enabled": true
-            }
-          ]
-        },
-        {
-          "id": "09c733b5-f225-43c1-9726-ab70250cebfe",
-          "title": "AI写作",
-          "icon": "Folder",
-          "description": "收集AI文字写作创作文字编辑工具",
-          "enabled": true,
-          "items": [
-            {
-              "id": "1764162262399",
-              "title": "NotebookLM",
-              "href": "https://notebooklm.google/",
-              "description": "认识Google  NotebookLM：给力的 AI 研究工具与思考伙伴，可以帮助您分析来源、理清复杂的资料及转换内容。",
-              "icon": "/assets/favicon_1764162265139.svg",
               "enabled": true
             }
           ]
