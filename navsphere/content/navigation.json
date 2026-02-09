@@ -733,31 +733,6 @@
           ]
         },
         {
-          "id": "21bf96f3-acb0-4e28-aaa8-2759ac55d278",
-          "title": "MCP Server",
-          "icon": "Edit",
-          "description": "",
-          "enabled": true,
-          "items": [
-            {
-              "id": "1752554261491",
-              "title": "MCP Server 集合站",
-              "href": "https://smithery.ai/",
-              "description": "各种各样的 MCP Server",
-              "icon": "/assets/img_1752554273115.webp",
-              "enabled": true
-            },
-            {
-              "id": "1767055771104",
-              "title": "Awesome MCP Servers",
-              "href": "https://mcpservers.org/",
-              "description": "A curated collection of MCP (Model Context Protocol) servers. Search and discover MCP servers and clients.",
-              "icon": "/assets/favicon_1767055774467.png",
-              "enabled": true
-            }
-          ]
-        },
-        {
           "id": "428d0ba1-78f8-48d6-83db-f837f3830e1f",
           "title": "AI视频",
           "icon": "Folder",
@@ -778,6 +753,31 @@
               "href": "https://aistudio.google.com/models/veo-3",
               "description": "The fastest path from prompt to production with Gemini",
               "icon": "/assets/favicon_1760605601454.webp",
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "id": "21bf96f3-acb0-4e28-aaa8-2759ac55d278",
+          "title": "MCP Server",
+          "icon": "Edit",
+          "description": "",
+          "enabled": true,
+          "items": [
+            {
+              "id": "1752554261491",
+              "title": "MCP Server 集合站",
+              "href": "https://smithery.ai/",
+              "description": "各种各样的 MCP Server",
+              "icon": "/assets/img_1752554273115.webp",
+              "enabled": true
+            },
+            {
+              "id": "1767055771104",
+              "title": "Awesome MCP Servers",
+              "href": "https://mcpservers.org/",
+              "description": "A curated collection of MCP (Model Context Protocol) servers. Search and discover MCP servers and clients.",
+              "icon": "/assets/favicon_1767055774467.png",
               "enabled": true
             }
           ]
