@@ -486,10 +486,10 @@
         },
         {
           "id": "6",
-          "title": "交互动效",
+          "title": "视频音频",
           "href": "#交互动效",
-          "icon": "Book",
-          "description": "",
+          "icon": "Folder",
+          "description": "收集各类处理编辑视频音频的工具，各类剪辑工具",
           "items": [
             {
               "id": "6_1",
