@@ -773,14 +773,6 @@
           "enabled": true,
           "items": [
             {
-              "id": "1760435371540",
-              "title": "Suno | AI Music",
-              "href": "https://suno.com/home",
-              "description": "Create stunning original music for free in seconds using AI. Make your own masterpieces, share with friends, and discover music from artists worldwide.",
-              "icon": "/assets/favicon_1760435376153.webp",
-              "enabled": true
-            },
-            {
               "id": "1760435417839",
               "title": "Sora",
               "href": "https://sora.chatgpt.com/",
@@ -846,7 +838,16 @@
           "icon": "Folder",
           "description": "收集AI音频处理编辑转化工具",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "1760435371540",
+              "title": "Suno | AI Music",
+              "href": "https://suno.com/home",
+              "description": "Create stunning original music for free in seconds using AI. Make your own masterpieces, share with friends, and discover music from artists worldwide.",
+              "icon": "/assets/favicon_1760435376153.webp",
+              "enabled": true
+            }
+          ]
         }
       ],
       "description": "专注聚合全球优质AI人工智能工具,涵盖AI写作、文本生成、图片生成、视频处理、代码开发、语音识别等10+领域精选AI应用推荐",
