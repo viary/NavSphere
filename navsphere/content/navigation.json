@@ -619,6 +619,23 @@
           ]
         },
         {
+          "id": "eb656a11-5442-4670-9cb6-9ba9bd08682f",
+          "title": "AI 编程",
+          "icon": "Folder",
+          "description": "收集AI辅助编程助手工具",
+          "enabled": true,
+          "items": [
+            {
+              "id": "1760513538759",
+              "title": "v0 by Vercel",
+              "href": "https://v0.app/",
+              "description": "Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.",
+              "icon": "/assets/favicon_1760513560381.webp",
+              "enabled": true
+            }
+          ]
+        },
+        {
           "id": "cbb3e33d-408b-41ba-9e9a-e0444303e3ff",
           "title": "生产力工具",
           "icon": "Book",
@@ -721,23 +738,6 @@
               "href": "https://app.leonardo.ai/",
               "description": "Leonardo.AI是一个人工智能绘图社区和工具。它基于Stable Diffusion人工智能模型,深度集成了其各种插件,提供强大的图片生成和创作功能。",
               "icon": "/assets/images/logos/leonardo.webp",
-              "enabled": true
-            }
-          ]
-        },
-        {
-          "id": "eb656a11-5442-4670-9cb6-9ba9bd08682f",
-          "title": "AI 编程",
-          "icon": "Folder",
-          "description": "收集AI辅助编程助手工具",
-          "enabled": true,
-          "items": [
-            {
-              "id": "1760513538759",
-              "title": "v0 by Vercel",
-              "href": "https://v0.app/",
-              "description": "Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.",
-              "icon": "/assets/favicon_1760513560381.webp",
               "enabled": true
             }
           ]
