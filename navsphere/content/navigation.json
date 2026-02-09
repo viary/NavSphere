@@ -586,6 +586,14 @@
               "description": "访问 payloadcms.com",
               "icon": "/assets/favicon_1763352611319.webp",
               "enabled": true
+            },
+            {
+              "id": "1760507310883",
+              "title": "free-for.dev",
+              "href": "https://free-for.dev/#/",
+              "description": "Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions.",
+              "icon": "/assets/favicon_1760507315276.webp",
+              "enabled": true
             }
           ],
           "enabled": true
@@ -1107,14 +1115,6 @@
           "description": "",
           "enabled": true,
           "items": [
-            {
-              "id": "1760507310883",
-              "title": "Free for Developers",
-              "href": "https://free-for.dev/#/",
-              "description": "Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions.",
-              "icon": "/assets/favicon_1760507315276.webp",
-              "enabled": true
-            },
             {
               "id": "1760512493923",
               "title": "VuePress",
