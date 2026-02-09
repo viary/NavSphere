@@ -850,9 +850,9 @@
             },
             {
               "id": "1767055771104",
-              "title": "Awesome MCP Servers",
+              "title": "Awesome MCP",
               "href": "https://mcpservers.org/",
-              "description": "A curated collection of MCP (Model Context Protocol) servers. Search and discover MCP servers and clients.",
+              "description": "Awesome MCP Servers，A curated collection of MCP (Model Context Protocol) servers. Search and discover MCP servers and clients.",
               "icon": "/assets/favicon_1767055774467.png",
               "enabled": true
             }
