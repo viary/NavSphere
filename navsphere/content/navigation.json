@@ -1117,14 +1117,6 @@
           ]
         },
         {
-          "id": "5820a691-8aa4-4479-a90f-3789744d944a",
-          "title": "知识库",
-          "icon": "Code",
-          "description": "",
-          "enabled": true,
-          "items": []
-        },
-        {
           "id": "044a42a2-b7be-4a19-bce8-1bc3fd98f052",
           "title": "运维工具",
           "icon": "Book",
