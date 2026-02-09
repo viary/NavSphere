@@ -626,14 +626,6 @@
           "enabled": true,
           "items": [
             {
-              "id": "1760513538759",
-              "title": "v0 by Vercel",
-              "href": "https://v0.app/",
-              "description": "Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.",
-              "icon": "/assets/favicon_1760513560381.webp",
-              "enabled": true
-            },
-            {
               "id": "1737529639971",
               "title": "Cursor",
               "href": "https://www.cursor.com/",
@@ -671,6 +663,14 @@
               "href": "https://www.anthropic.com/claude-code",
               "description": "Unleash Claude’s raw power directly in your terminal. Search million-line codebases instantly. Turn hours-long workflows into a single command. Your tools. Your workflow. Your codebase, evolving at thought speed.",
               "icon": "/assets/img_1752662771107.webp",
+              "enabled": true
+            },
+            {
+              "id": "1760513538759",
+              "title": "v0 by Vercel",
+              "href": "https://v0.app/",
+              "description": "Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.",
+              "icon": "/assets/favicon_1760513560381.webp",
               "enabled": true
             },
             {
