@@ -528,9 +528,9 @@
         },
         {
           "id": "b93d8160-6a7d-46d8-a50e-8165a6a571f2",
-          "title": "云盘存储",
+          "title": "网盘传输",
           "icon": "Folder",
-          "description": "精选优质网盘及存储产品",
+          "description": "精选优质网盘及存储产品，文件投递传送分享，局域网文件分享",
           "enabled": true,
           "items": [
             {
