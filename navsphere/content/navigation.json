@@ -348,14 +348,6 @@
               "enabled": true
             },
             {
-              "id": "3_2",
-              "title": "JSON Editor Online",
-              "href": "https://jsoneditoronline.org/",
-              "description": "在线的JSON编辑器，包括格式化，可视化，对比，显示行号功能。",
-              "icon": "/assets/images/logos/json.webp",
-              "enabled": true
-            },
-            {
               "id": "3_3",
               "title": "EditTools",
               "href": "https://edittools.org/zh-cn",
@@ -479,6 +471,14 @@
               "href": "https://www.figma.com/",
               "description": "在线UI设计工具",
               "icon": "/assets/images/logos/figma.webp",
+              "enabled": true
+            },
+            {
+              "id": "3_2",
+              "title": "JSON Editor Online",
+              "href": "https://jsoneditoronline.org/",
+              "description": "在线的JSON编辑器，包括格式化，可视化，对比，显示行号功能。",
+              "icon": "/assets/images/logos/json.webp",
               "enabled": true
             }
           ],
