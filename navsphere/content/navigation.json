@@ -578,6 +578,14 @@
               "description": "The AI Toolkit for TypeScript, from the creators of Next.js.",
               "icon": "/assets/favicon_1760433274445.webp",
               "enabled": true
+            },
+            {
+              "id": "1763352609100",
+              "title": "Payloadcms",
+              "href": "https://payloadcms.com/",
+              "description": "访问 payloadcms.com",
+              "icon": "/assets/favicon_1763352611319.webp",
+              "enabled": true
             }
           ],
           "enabled": true
@@ -1082,14 +1090,6 @@
           "description": "",
           "enabled": true,
           "items": [
-            {
-              "id": "1763352609100",
-              "title": "Payloadcms",
-              "href": "https://payloadcms.com/",
-              "description": "访问 payloadcms.com",
-              "icon": "/assets/favicon_1763352611319.webp",
-              "enabled": true
-            },
             {
               "id": "1768145641850",
               "title": "microsoft 开发者",
