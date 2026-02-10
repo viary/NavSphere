@@ -902,16 +902,7 @@
           "icon": "Folder",
           "description": "收集AI提示词辅助工具",
           "enabled": true,
-          "items": [
-            {
-              "id": "1765285549189",
-              "title": "Snack Prompt",
-              "href": "https://snackprompt.com/",
-              "description": "A platform to share and discover amazing AI prompts and resources.",
-              "icon": "/assets/favicon_1765285552557.webp",
-              "enabled": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "21bf96f3-acb0-4e28-aaa8-2759ac55d278",
@@ -934,6 +925,14 @@
               "href": "https://mcpservers.org/",
               "description": "Awesome MCP Servers，A curated collection of MCP (Model Context Protocol) servers. Search and discover MCP servers and clients.",
               "icon": "/assets/favicon_1767055774467.png",
+              "enabled": true
+            },
+            {
+              "id": "1765285549189",
+              "title": "Snack Prompt",
+              "href": "https://snackprompt.com/",
+              "description": "AI提示词生成，A platform to share and discover amazing AI prompts and resources.",
+              "icon": "/assets/favicon_1765285552557.webp",
               "enabled": true
             }
           ]
