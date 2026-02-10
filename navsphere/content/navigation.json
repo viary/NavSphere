@@ -499,9 +499,9 @@
           "items": [
             {
               "id": "6_1",
-              "title": "Adobe After Effects CC",
+              "title": "After Effects",
               "href": "https://www.adobe.com/cn/products/aftereffects/",
-              "description": "电影般的视觉效果和动态图形。",
+              "description": "电影般的视觉效果和动态图形，Adobe After Effects CC",
               "icon": "/assets/images/logos/AdobeAfterEffectsCC.webp",
               "enabled": true
             },
