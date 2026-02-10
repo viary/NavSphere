@@ -48,7 +48,7 @@ function SignInContent() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-semibold leading-none tracking-tight text-white">
-                NavSphere
+                资源鉴导航Go
               </span>
             </div>
           </div>
@@ -56,9 +56,9 @@ function SignInContent() {
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              &ldquo;这是一个专为程序员设计的导航网站，集成了常用的开发工具、学习资源和技术社区。&rdquo;
+              &ldquo;精选全网影音娱乐学习优质资源轻量导航站！提供免费 4K 高清影视软件、TV 盒子软件、无损音乐等。&rdquo;
             </p>
-            <footer className="text-sm">NavSphere Team</footer>
+            <footer className="text-sm">--资源鉴</footer>
           </blockquote>
         </div>
       </div>
