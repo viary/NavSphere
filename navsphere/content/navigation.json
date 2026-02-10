@@ -1115,14 +1115,6 @@
           ]
         },
         {
-          "id": "e4c71dbf-d8c2-4dba-8c7e-b9cef0366a84",
-          "title": "开源组件&SDK",
-          "icon": "Book",
-          "description": "",
-          "enabled": true,
-          "items": []
-        },
-        {
           "id": "044a42a2-b7be-4a19-bce8-1bc3fd98f052",
           "title": "运维工具",
           "icon": "Book",
