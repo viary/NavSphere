@@ -628,7 +628,16 @@
           "icon": "Folder",
           "description": "收集文本类，写作类，文字处理工具，比对工具，创作工具",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "1770726592950",
+              "title": "FileCompare",
+              "href": "https://filecompare.org/zh-cn/",
+              "description": "在线对比两个列表，快速找出差异与重复项 - 免费在线对比工具，数秒内即可识别列表间的差异、匹配项及重复内容。操作简单，结果可靠，助您高效处理数据。",
+              "icon": "/assets/favicon_1770726614153.png",
+              "enabled": true
+            }
+          ]
         },
         {
           "id": "b93d8160-6a7d-46d8-a50e-8165a6a571f2",
