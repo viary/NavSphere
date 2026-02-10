@@ -1120,16 +1120,7 @@
           "icon": "Book",
           "description": "",
           "enabled": true,
-          "items": [
-            {
-              "id": "1768145641850",
-              "title": "microsoft 开发者",
-              "href": "https://partner.microsoft.com/zh-cn/dashboard/microsoftedge/overview",
-              "description": "edge 插件上传地址",
-              "icon": "/assets/favicon_1768145646425.png",
-              "enabled": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "044a42a2-b7be-4a19-bce8-1bc3fd98f052",
@@ -1176,6 +1167,14 @@
               "href": "https://analytics.google.com/",
               "description": "Google分析（Google Analytics）是一个由Google所提供的网站流量统计服务。",
               "icon": "/assets/images/logos/analytics.webp",
+              "enabled": true
+            },
+            {
+              "id": "1768145641850",
+              "title": "microsoft 开发者",
+              "href": "https://partner.microsoft.com/zh-cn/dashboard/microsoftedge/overview",
+              "description": "edge 插件上传地址",
+              "icon": "/assets/favicon_1768145646425.png",
               "enabled": true
             }
           ]
