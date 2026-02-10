@@ -915,9 +915,9 @@
         },
         {
           "id": "21bf96f3-acb0-4e28-aaa8-2759ac55d278",
-          "title": "MCP Server",
-          "icon": "Edit",
-          "description": "",
+          "title": "AI使用",
+          "icon": "Folder",
+          "description": "收集AI基础使用，应用，基础协议等技术资源",
           "enabled": true,
           "items": [
             {
