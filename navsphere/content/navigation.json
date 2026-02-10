@@ -1061,6 +1061,14 @@
               "description": "Tencent EdgeOne，亚洲领先的CDN，利用腾讯先进的边缘节点提供卓越的边缘解决方案，用于加速、安全、无服务器和视频。",
               "icon": "/assets/favicon_1755225933031.webp",
               "enabled": true
+            },
+            {
+              "id": "1754295485849",
+              "title": "namecheap",
+              "href": "https://www.namecheap.com/",
+              "description": "域名注册托管，Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 18 million domains under management, you know you’re in good hands.",
+              "icon": "/assets/favicon_1754295511938.webp",
+              "enabled": true
             }
           ]
         },
@@ -1070,16 +1078,7 @@
           "icon": "Files",
           "description": "",
           "enabled": true,
-          "items": [
-            {
-              "id": "1754295485849",
-              "title": "namecheap",
-              "href": "https://www.namecheap.com/",
-              "description": "Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 18 million domains under management, you know you’re in good hands.",
-              "icon": "/assets/favicon_1754295511938.webp",
-              "enabled": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "457c35b5-fcfb-4c72-8a9a-af21f9371e6b",
