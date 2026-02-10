@@ -210,6 +210,14 @@
               "description": "电视点播，剧迷tv是专为智能电视提供的免费追剧的平台,包含4K热门影视剧，综艺，动漫，少儿等。",
               "icon": "https://s41.ax1x.com/2026/02/10/pZHZddP.png",
               "enabled": true
+            },
+            {
+              "id": "1770709147422",
+              "title": "荐片TV",
+              "href": "https://pan.baidu.com/s/1-0JbE2qi_ooERXXgTjx7DA?pwd=qbh2",
+              "description": "电视点播，荐片TV电视版官方版是一款高清免费的观影神器，海量电影、热剧、动漫、综艺应有尽有，支持多清晰度自由切换，多条播放线路保障流畅观影",
+              "icon": "https://s41.ax1x.com/2026/02/10/pZHZgLn.png",
+              "enabled": true
             }
           ]
         }
