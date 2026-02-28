@@ -1373,7 +1373,7 @@
     },
     {
       "id": "8",
-      "title": "素材资源",
+      "title": "办公学习",
       "icon": "linecons-thumbs-up",
       "items": [],
       "subCategories": [
@@ -1556,7 +1556,9 @@
             }
           ]
         }
-      ]
+      ],
+      "description": "收集各类办公学习资源，工具，素材，PPT，模板，设计，学习，网课等内容",
+      "enabled": true
     }
   ]
 }
