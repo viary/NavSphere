@@ -1032,10 +1032,10 @@
           "items": [
             {
               "id": "1755225929754",
-              "title": "Tencent-EdgeOne",
-              "href": "https://edgeone.ai/zh",
-              "description": "Tencent EdgeOne，亚洲领先的CDN，利用腾讯先进的边缘节点提供卓越的边缘解决方案，用于加速、安全、无服务器和视频。",
-              "icon": "/assets/favicon_1755225933031.webp",
+              "title": "电话卡一证通查",
+              "href": "https://getsimnum.caict.ac.cn/#/",
+              "description": "中国信息通信研究院（CAICT）主办的公益性服务平台，是工信部推动的”全国移动电话卡’一证通查'”服务的官方入口。该平台的核心特色在于为用户提供便捷、安全的电话卡查询服务，帮助用户查询名下登记的电话卡数量，有效防止被冒名办卡，显著降低电信诈骗风险。",
+              "icon": "https://s41.ax1x.com/2026/02/28/peSPbqg.png",
               "enabled": true
             },
             {
