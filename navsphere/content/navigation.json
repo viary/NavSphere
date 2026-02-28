@@ -1285,10 +1285,10 @@
         },
         {
           "id": "8_2",
-          "title": "LOGO设计",
+          "title": "logo设计",
           "href": "#LOGO设计",
-          "icon": "",
-          "description": "",
+          "icon": "Folder",
+          "description": "logo设计工具，在线网址",
           "items": [
             {
               "id": "8_2_1",
@@ -1322,7 +1322,8 @@
               "icon": "/assets/images/logos/InstantLogoSearch.webp",
               "enabled": true
             }
-          ]
+          ],
+          "enabled": true
         },
         {
           "id": "8_3",
