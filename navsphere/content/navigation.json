@@ -1129,6 +1129,14 @@
               "enabled": true
             },
             {
+              "id": "1_1",
+              "title": "Google Analytics",
+              "href": "https://analytics.google.com/",
+              "description": "Google分析（Google Analytics）是一个由Google所提供的网站流量统计服务。",
+              "icon": "/assets/images/logos/analytics.webp",
+              "enabled": true
+            },
+            {
               "id": "1761279460902",
               "title": "宝塔",
               "href": "https://www.bt.cn/new/index.html",
@@ -1142,14 +1150,6 @@
               "href": "https://1panel.cn/",
               "description": "1Panel 提供了一个直观的 Web 界面，帮助用户轻松管理 Linux 服务器中的应用、网站、文件、数据库以及大语言模型（LLMs）等。",
               "icon": "/assets/favicon_1761279574408.webp",
-              "enabled": true
-            },
-            {
-              "id": "1_1",
-              "title": "Google Analytics",
-              "href": "https://analytics.google.com/",
-              "description": "Google分析（Google Analytics）是一个由Google所提供的网站流量统计服务。",
-              "icon": "/assets/images/logos/analytics.webp",
               "enabled": true
             },
             {
