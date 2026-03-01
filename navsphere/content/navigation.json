@@ -1349,6 +1349,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "849a214b-95cf-4925-9a98-f86930ceb6f7",
+          "title": "PPT模板",
+          "icon": "Folder",
+          "description": "收集各类PPT模板工具网站",
+          "enabled": true,
+          "items": []
         }
       ],
       "description": "收集各类办公学习资源，工具，素材，PPT，模板，设计，学习，网课等内容",
