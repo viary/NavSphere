@@ -1114,10 +1114,10 @@
           "items": [
             {
               "id": "1761279603255",
-              "title": "Dokploy",
-              "href": "https://dokploy.com/zh-Hans",
-              "description": "以前所未有的简洁和高效提供一站式项目、数据的管理以及系统监控。",
-              "icon": "/assets/favicon_1761279607527.svg",
+              "title": "100000 Stars",
+              "href": "http://stars.chromeexperiments.com/",
+              "description": "一个非常神奇且小众的国外站点，是由Google推出的3D星空宇宙，普通人也能感受宇宙的浩瀚，星河璀璨乃人间浪漫，你可以在这个站点任意遨游银河系，点击任意一颗星球还可以看到它的自我介绍哦。",
+              "icon": "https://pic1.imgdb.cn/item/69a3efc8ac80c84bfd150b9e.png",
               "enabled": true
             },
             {
