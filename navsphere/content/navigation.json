@@ -1154,10 +1154,10 @@
             },
             {
               "id": "1761279549812",
-              "title": "1panel",
-              "href": "https://1panel.cn/",
-              "description": "1Panel 提供了一个直观的 Web 界面，帮助用户轻松管理 Linux 服务器中的应用、网站、文件、数据库以及大语言模型（LLMs）等。",
-              "icon": "/assets/favicon_1761279574408.webp",
+              "title": "壁纸汇",
+              "href": "https://www.bizhihui.com/",
+              "description": "壁纸汇是一个壁纸资源网站，提供手机壁纸、电脑壁纸资源，壁纸分辨率以4K、8K为主，而且支持自定义尺寸的壁纸下载，能够很好的适配各个设备和分辨率。",
+              "icon": "https://pic1.imgdb.cn/item/69a3f787ac80c84bfd153db3.webp",
               "enabled": true
             }
           ]
