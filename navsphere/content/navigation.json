@@ -1082,9 +1082,9 @@
         },
         {
           "id": "457c35b5-fcfb-4c72-8a9a-af21f9371e6b",
-          "title": "付费订阅平台",
-          "icon": "BookOpen",
-          "description": "",
+          "title": "投诉举报",
+          "icon": "Folder",
+          "description": "收集各类投诉举报入口",
           "enabled": true,
           "items": [
             {
