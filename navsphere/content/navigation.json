@@ -1097,10 +1097,10 @@
             },
             {
               "id": "1759044578679",
-              "title": "Ghost",
-              "href": "https://ghost.org/",
-              "description": "Beautiful, modern publishing with email newsletters and paid subscriptions built-in. Used by Platformer, 404Media, Lever News, Tangle, The Browser, and thousands more.",
-              "icon": "/assets/favicon_1759044603255.webp",
+              "title": "黑猫投诉",
+              "href": "https://tousu.sina.com.cn/",
+              "description": "黑猫投诉作为新浪旗下消费者服务平台，构建了”用户发声-媒体曝光-企业响应”的三方协同治理生态。平台通过标准化投诉模板降低维权门槛，用户可一键选择电商、金融、物流等12个消费场景，并上传聊天记录、支付凭证等证据链。",
+              "icon": "https://s41.ax1x.com/2026/03/01/peSWKmQ.png",
               "enabled": true
             }
           ]
