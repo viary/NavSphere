@@ -1176,7 +1176,16 @@
           "icon": "Folder",
           "description": "收集各类PPT模板工具网站",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "1772345907339",
+              "title": "爱PPT",
+              "href": "https://www.2ppt.com/",
+              "description": "一家专注于分享高质量的免费PPT模板下载网站，包括ppt模板、PPT图表、PPT背景图片、PPT素材、PPT教程等各类PPT资源",
+              "icon": "https://s41.ax1x.com/2026/03/01/peSg8fK.webp",
+              "enabled": true
+            }
+          ]
         },
         {
           "id": "8_1",
