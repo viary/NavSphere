@@ -1184,6 +1184,14 @@
               "description": "一家专注于分享高质量的免费PPT模板下载网站，包括ppt模板、PPT图表、PPT背景图片、PPT素材、PPT教程等各类PPT资源",
               "icon": "https://s41.ax1x.com/2026/03/01/peSg8fK.webp",
               "enabled": true
+            },
+            {
+              "id": "1772346235428",
+              "title": "PPT超级市场",
+              "href": "https://www.pptsupermarket.com/",
+              "description": "提供免费模板、免费PPT定制、PPT教程、PPT工具、AIPPT生成、AIPPT演讲服务",
+              "icon": "/assets/favicon_1772346243027.png",
+              "enabled": true
             }
           ]
         },
