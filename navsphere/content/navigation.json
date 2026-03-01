@@ -1072,10 +1072,10 @@
             },
             {
               "id": "1759044534148",
-              "title": "listmonk",
-              "href": "https://listmonk.app/",
-              "description": " Free and open source self-hosted newsletter, mailing list manager, and transactional mails",
-              "icon": "/assets/favicon_1759044556303.webp",
+              "title": "亲戚关系计算器",
+              "href": "https://passer-by.com/relationship/",
+              "description": "一款最为全面准确的亲戚称呼计算器及亲戚关系在线查询工具",
+              "icon": "https://pic1.imgdb.cn/item/69a3e96eac80c84bfd1507c6.png",
               "enabled": true
             }
           ]
