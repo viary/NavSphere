@@ -1047,6 +1047,14 @@
               "enabled": true
             },
             {
+              "id": "1754295485849",
+              "title": "namecheap",
+              "href": "https://www.namecheap.com/",
+              "description": "域名注册托管，Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 18 million domains under management, you know you’re in good hands.",
+              "icon": "/assets/favicon_1754295511938.webp",
+              "enabled": true
+            },
+            {
               "id": "1735612561958",
               "title": "Cloudflare",
               "href": "https://dash.cloudflare.com/",
@@ -1060,14 +1068,6 @@
               "href": "https://vercel.com/",
               "description": "Vercel 提供开发者工具和云基础设施，帮助构建、扩展和保护更快、更个性化的网络应用。",
               "icon": "/assets/images/logos/vercel.webp",
-              "enabled": true
-            },
-            {
-              "id": "1754295485849",
-              "title": "namecheap",
-              "href": "https://www.namecheap.com/",
-              "description": "域名注册托管，Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 18 million domains under management, you know you’re in good hands.",
-              "icon": "/assets/favicon_1754295511938.webp",
               "enabled": true
             }
           ]
