@@ -1138,10 +1138,10 @@
             },
             {
               "id": "1768145641850",
-              "title": "microsoft 开发者",
-              "href": "https://partner.microsoft.com/zh-cn/dashboard/microsoftedge/overview",
-              "description": "edge 插件上传地址",
-              "icon": "/assets/favicon_1768145646425.png",
+              "title": "2DWallpapers",
+              "href": "https://www.2dwallpapers.com/",
+              "description": "2DWallpapers是一个专注二次元电脑壁纸的网站，提供二次元的动漫、游戏相关的壁纸资源，最高可支持4K至8K的壁纸分辨率。",
+              "icon": "https://pic1.imgdb.cn/item/69a3f58fac80c84bfd153c2e.webp",
               "enabled": true
             },
             {
