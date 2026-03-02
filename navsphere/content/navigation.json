@@ -52,6 +52,14 @@
           "description": "每日摸鱼海报，专为摸鱼人士设计",
           "icon": "https://s41.ax1x.com/2026/02/02/pZ4INHH.jpg",
           "enabled": true
+        },
+        {
+          "id": "1770544992587",
+          "title": "乌云影视",
+          "href": "https://wooyun.tv/?token=lnk_milo1wh200qi",
+          "description": "乌云影视在线视频网站，海量高清影视免费在线观看",
+          "icon": "https://s41.ax1x.com/2026/01/26/pZREOwn.jpg",
+          "enabled": true
         }
       ],
       "subCategories": [],
@@ -130,14 +138,6 @@
           "description": "收藏高清在线播放影视网站",
           "enabled": true,
           "items": [
-            {
-              "id": "1770544992587",
-              "title": "乌云影视",
-              "href": "https://wooyun.tv/?token=lnk_milo1wh200qi",
-              "description": "乌云影视在线视频网站，海量高清影视免费在线观看",
-              "icon": "https://s41.ax1x.com/2026/01/26/pZREOwn.jpg",
-              "enabled": true
-            },
             {
               "id": "1760611219040",
               "title": "剧OK",
