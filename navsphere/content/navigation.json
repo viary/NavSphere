@@ -38,14 +38,6 @@
           "enabled": true
         },
         {
-          "id": "1741747111596",
-          "title": "乌云影视",
-          "href": "https://share.feijipan.com/s/3lZZPamE",
-          "description": "安卓：高清追剧软件，无广",
-          "icon": "https://s41.ax1x.com/2026/01/26/pZREOwn.jpg",
-          "enabled": true
-        },
-        {
           "id": "item-1765686645674",
           "title": "黄金价格",
           "href": "https://quote.cngold.org/gjs/jjs.html",
@@ -119,6 +111,14 @@
               "href": "https://share.feijipan.com/s/z0VSDwLG",
               "description": "安卓：一款主打全网影视资源聚合的优质观影软件",
               "icon": "https://s41.ax1x.com/2026/02/05/pZIDxiD.png",
+              "enabled": true
+            },
+            {
+              "id": "1741747111596",
+              "title": "乌云影视",
+              "href": "https://share.feijipan.com/s/3lZZPamE",
+              "description": "安卓：高清追剧软件，无广",
+              "icon": "https://s41.ax1x.com/2026/01/26/pZREOwn.jpg",
               "enabled": true
             }
           ]
