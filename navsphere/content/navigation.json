@@ -128,6 +128,14 @@
               "description": "安卓：一款主打全网影视资源聚合的优质观影软件",
               "icon": "https://s41.ax1x.com/2026/02/05/pZIDxiD.png",
               "enabled": true
+            },
+            {
+              "id": "1774679353026",
+              "title": "剧岛影视",
+              "href": "https://share.feijipan.com/s/g029qwXT",
+              "description": "安卓：剧岛2.1.0-免费4K高清全网影视追剧软件-可看电视直播台",
+              "icon": "https://s41.ax1x.com/2026/03/28/pe1PpYF.webp",
+              "enabled": true
             }
           ]
         },
