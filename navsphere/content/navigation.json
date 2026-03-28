@@ -304,6 +304,14 @@
               "enabled": true
             }
           ]
+        },
+        {
+          "id": "832c79ab-fd38-4932-bae1-469844f1130b",
+          "title": "安卓音乐",
+          "icon": "Folder",
+          "description": "分享手机优秀安卓音乐软件",
+          "enabled": true,
+          "items": []
         }
       ]
     },
